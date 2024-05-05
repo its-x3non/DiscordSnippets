@@ -191,3 +191,6 @@ padding-right: 48px;
   box-shadow: 0 2px 4px 0.5px black; 
   border: 2px solid var(--default-msg-color);
 }
+
+/* fixes */
+.content__945f5 [class^="timestamp"]{ top: -1px; }
