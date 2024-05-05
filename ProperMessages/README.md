@@ -5,6 +5,8 @@
 
 ## Root to place in Quick CSS
 ```css
+@import('https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css');
+
   :root {
     --default-msg-color: rgba(210, 210, 210, 0.2);
     --self-color: rgba(204, 108, 231, .2);
