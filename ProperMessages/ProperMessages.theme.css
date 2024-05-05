@@ -23,17 +23,13 @@
   91% { background-color: rgb(255, 0, 127, .2); }
 }
 
-/* ========================================= */
-/* align self messages to the right by seele */
-/*          taken from vencord               */
-/* ========================================= */
-
 [class^=messageListItem__][data-is-self="true"] {
 margin-left: auto;
 width: fit-content;
 padding-right: 48px;
-  [class^=container_], .embedAuthor_cb4bfc { direction: rtl; }
-
+  /* [class^=container_], .embedAuthor_cb4bfc { direction: rtl; } */
+  /* .embedAuthor_cb4bfc [class^="timestamp"] {  } */
+  
   [class^=contents_] {
     display: inline-block;
     width: 100%;
@@ -64,7 +60,6 @@ padding-right: 48px;
     display: flex; 
     flex-direction: row-reverse;
   }
-
   [class*=timestampInline_] { 
     top: 2px; 
     left: unset;
@@ -75,18 +70,19 @@ padding-right: 48px;
 /* =============== */
 /* message bubbles */
 /* =============== */
-.cozyMessage__9f4fd .contents_d3ae0d > [class^="markup"]:not(:empty, code),
+[class^=contents_] [class^="markup"]:not(:empty, code),
 .container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
   border: 2px solid var(--default-msg-color);
   background-color: var(--default-msg-color);
   border-radius: 10px;
   letter-spacing: 0.1mm;
-  max-width: max-content;
+  max-width: 500px;
   box-sizing: border-box;
   display: inline-block;
   padding: 8px;
   margin: 0;
   box-shadow: 0 2px 4px 0.5px black;
+  position:relative;
 } 
 
 /* attachment/embed color */
