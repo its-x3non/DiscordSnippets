@@ -60,7 +60,7 @@ padding-right: 48px;
     right: -12px;
   }
 
-  [class^=header__], [class*=messageContent__] { display: flex; }
+  [class^=header__], [class*=messageContent__] {display: flex; }
   [class*=timestampInline_] { top: 2px; }
 }
 
@@ -177,9 +177,6 @@ padding-right: 48px;
 .spine_d081ec.cozy__0c529,
 .message_ccca67::after
 { display: none; }
-
-/* moves edit button to be properly aligned */
-.markup_a7e664 > .timestamp_c79dd2 { top: -2px; }
 
 /* adds shadow to the reaction thingy */
 [class^="container"] .reaction__4a43f{ 
