@@ -64,7 +64,9 @@ padding-right: 48px;
   [class*=timestampInline_] { top: 2px; }
 }
 
+/* =============== */
 /* message bubbles */
+/* =============== */
 .cozyMessage__9f4fd .contents_d3ae0d > [class^="markup"]:not(:empty, code),
 .container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
   border: 2px solid var(--default-msg-color);
@@ -78,12 +80,6 @@ padding-right: 48px;
   margin: 0;
   box-shadow: 0 2px 4px 0.5px black;
 } 
-
-/* adds shadow to the reaction thingy */
-[class^="container"] .reaction__4a43f{ 
-	box-shadow: 0 2px 4px 0.5px black; 
-	border: 2px solid var(--default-msg-color);
-}
 
 /* attachment/embed color */
 .container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
@@ -147,9 +143,9 @@ padding-right: 48px;
   top: 0;
 }
 
-/* ==================================== */
-/* username (and tags) and avatar stuff */
-/* ==================================== */
+/* =========================================== */
+/* username (and tags), avatars, n other stuff */
+/* =========================================== */
 
 /* adds shadowing to avatar (not avatar deco) */
 .contents_d3ae0d .avatar__08316 {
@@ -160,6 +156,9 @@ padding-right: 48px;
 /* moves avatar down & username up */
 .contents_d3ae0d [class^="avatar"] { top: calc(100% - 48px); } 
 .contents_d3ae0d [class^="username"]{ top: -2px; }
+
+/* moves header stuff up 3 pixels */
+.contents_d3ae0d [class^="header"]{ top: -3px; }
 
 /* bot stuff */
 .botTag__11e95:not([class*="botTagOP"]){
@@ -181,3 +180,9 @@ padding-right: 48px;
 
 /* moves edit button to be properly aligned */
 .markup_a7e664 > .timestamp_c79dd2 { top: -2px; }
+
+/* adds shadow to the reaction thingy */
+[class^="container"] .reaction__4a43f{ 
+	box-shadow: 0 2px 4px 0.5px black; 
+	border: 2px solid var(--default-msg-color);
+}
