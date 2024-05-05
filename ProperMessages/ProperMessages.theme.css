@@ -1,0 +1,183 @@
+/**
+  * @name ProperMessages
+  * @author x3non
+  * @version v1
+  * @description Discord becomes a real messaging system
+  * @authorId 332628896497270788
+  * @source 
+*/
+
+@keyframes rainbowColor {
+  100%,
+  0% { background-color: rgb(255, 0, 0, .2); }
+  8% { background-color: rgb(255, 127, 0, .2); }
+  16% { background-color: rgb(255, 255, 0, .2); }
+  25% { background-color: rgb(127, 255, 0, .2); }
+  33% { background-color: rgb(0, 255, 0, .2); }
+  41% { background-color: rgb(0, 255, 127, .2); }
+  50% { background-color: rgb(0, 255, 255, .2); }
+  58% { background-color: rgb(0, 127, 255, .2); }
+  66% { background-color: rgb(0, 0, 255, .2); }
+  75% { background-color: rgb(127, 0, 255, .2); }
+  83% { background-color: rgb(255, 0, 255, .2); }
+  91% { background-color: rgb(255, 0, 127, .2); }
+}
+
+/* ========================================= */
+/* align self messages to the right by seele */
+/*          taken from vencord               */
+/* ========================================= */
+
+[class^=messageListItem__][data-is-self="true"] {
+margin-left: auto;
+width: fit-content;
+padding-right: 48px;
+  [class^=container_], .embedAuthor_cb4bfc { direction: rtl; }
+
+  [class^=contents_] {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 8px;
+  }
+
+  [class^=repliedMessage_],
+  [class^=contents_] [class*=messageContent__],
+    a:not([class*=embed_] [class*=embedAuthorNameLink_]) {
+    margin-left: auto;
+  }
+
+  [class^=avatar__] {
+    left: unset;
+    right: -8px;
+  }
+
+  /* if you have a decoration on, this should allign */
+  [class^=avatar_] + [class^=avatarDecoration_],
+  [class^=avatar_] [class^=avatarDecoration_] {
+    left: unset;
+    right: -12px;
+  }
+
+  [class^=header__], [class*=messageContent__] { display: flex; }
+  [class*=timestampInline_] { top: 2px; }
+}
+
+/* message bubbles */
+.cozyMessage__9f4fd .contents_d3ae0d > [class^="markup"]:not(:empty, code),
+.container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
+  border: 2px solid var(--default-msg-color);
+  background-color: var(--default-msg-color);
+  border-radius: 10px;
+  letter-spacing: 0.1mm;
+  max-width: max-content;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 8px;
+  margin: 0;
+  box-shadow: 0 2px 4px 0.5px black;
+} 
+
+/* adds shadow to the reaction thingy */
+[class^="container"] .reaction__4a43f{ 
+	box-shadow: 0 2px 4px 0.5px black; 
+	border: 2px solid var(--default-msg-color);
+}
+
+/* attachment/embed color */
+.container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
+  border: 2px solid var(--attachment-color);
+  background-color: var(--attachment-color);
+  animation: rainbowColor 5s linear infinite; /* you can comment this out if you don't want a rainbow */
+}
+
+/* my color :3 */
+.messageListItem__050f9[data-is-self="true"] >
+.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code){
+  border: 2px solid var(--self-color);
+  background-color: var(--self-color);
+} 
+
+/* ======================= */
+/* Timestamps by SEELE1306 */
+/*  Vencord CSS Snippets   */
+/* ======================= */
+
+.contents_d3ae0d [class^="timestamp"] {
+  position: relative;
+  color: var(--text-3) !important;
+  letter-spacing: 0.05em;
+  font-size: 10px !important;
+  margin: 0 4px;
+  height: 16px;
+  border-radius: 5px;
+  top: -4px;
+  line-height: 1rem !important;
+  /* box-shadow: 0 2px 1px 0.5px black; */
+}
+
+.contents_d3ae0d [class^="botTagCozy_"] {
+  line-height: 1rem;
+  height: 16px;
+  top: 2px;
+}
+
+/* if not me */
+.contents_d3ae0d [class^="timestamp"]:not(:has(time)) {
+  background: var(--default-time-color);
+  padding: 0 4px 0 2px;
+}
+
+.contents_d3ae0d [class^="timestamp"]:has(time) {
+  background: var(--default-time-color);
+  border: 1px solid var(--default-time-color);
+  padding: 0 4px;
+}
+
+/* if me */
+.messageListItem__050f9[data-is-self="true"]
+.contents_d3ae0d [class^="timestamp"]:not(:has(time)) {
+  background: var(--self-time-color);
+}
+.messageListItem__050f9[data-is-self="true"]
+.contents_d3ae0d [class^="timestamp"]:has(time) {
+  background: var(--self-time-color);
+  border: 1px solid var(--self-time-color);
+  top: 0;
+}
+
+/* ==================================== */
+/* username (and tags) and avatar stuff */
+/* ==================================== */
+
+/* adds shadowing to avatar (not avatar deco) */
+.contents_d3ae0d .avatar__08316 {
+  border-radius: 35%;
+  box-shadow: 0 2px 4px 1px black;
+}
+
+/* moves avatar down & username up */
+.contents_d3ae0d [class^="avatar"] { top: calc(100% - 48px); } 
+.contents_d3ae0d [class^="username"]{ top: -2px; }
+
+/* bot stuff */
+.botTag__11e95:not([class*="botTagOP"]){
+  margin-left: 5px;
+  top: 0.5px;
+  position: relative;
+  color: var(--text-normal) !important;
+  font-size: 10px !important;
+  border-radius: 5px;
+  background: hsla(0, 0%, 100%, 0.25);
+  box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.55);
+}
+
+/* removes the reply/thread stuff */
+.repliedMessage__636d2::before, 
+.spine_d081ec.cozy__0c529,
+.message_ccca67::after
+{ display: none; }
+
+/* moves edit button to be properly aligned */
+.markup_a7e664 > .timestamp_c79dd2 { top: -2px; }
