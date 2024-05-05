@@ -106,7 +106,7 @@ padding-right: 48px;
 
 .contents_d3ae0d [class^="timestamp"] {
   position: relative;
-  color: var(--text-3) !important;
+  color: white !important;
   letter-spacing: 0.05em;
   font-size: 10px !important;
   margin: 0 4px;
