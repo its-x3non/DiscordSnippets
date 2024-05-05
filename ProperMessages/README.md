@@ -23,7 +23,7 @@
     animation: none;
   }
 ```
-___
+
 ## You can also add the following if you want to include your friends too:
 ```css
   :root {
@@ -50,7 +50,7 @@ ___
     border: 1px solid var(--(NAME GOES HERE)-time-color);
   }
 ```
-
+___
 # Here's what your QuickCSS file could look like
 ```css
 @import('https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css');
