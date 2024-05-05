@@ -193,4 +193,5 @@ padding-right: 48px;
 }
 
 /* fixes */
-.content__945f5 [class^="timestamp"]{ top: -1px; }
+.content__945f5 [class^="timestamp"]{ top: -1px; } /* fixed edit/time stamp in text */
+.content__945f5 { color: rgba(255,255,255,.5) } /* fixed call text */
