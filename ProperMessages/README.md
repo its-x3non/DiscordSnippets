@@ -10,7 +10,6 @@
   :root {
     --default-msg-color: rgba(210, 210, 210, 0.2);
     --self-color: rgba(204, 108, 231, .2);
-    --attachment-color: rgba(210, 210, 210, 0.2);
   
     --default-time-color: rgba(210, 210, 210, .5);
     --self-time-color: rgba(204, 108, 231, .5);
@@ -58,7 +57,6 @@ ___
   :root {
     --default-msg-color: rgba(210, 210, 210, 0.2);
     --self-color: rgba(204, 108, 231, .2);
-    --attachment-color: rgba(210, 210, 210, 0.2);
     --(NAME GOES HERE)-color: rgba(R, G, B, .2);
     
     --(NAME GOES HERE)-time-color: rgba(R, G, B, .5);
