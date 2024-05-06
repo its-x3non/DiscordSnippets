@@ -4,7 +4,7 @@
   * @version v1
   * @description Discord becomes a real messaging system
   * @authorId 332628896497270788
-  * @source 
+  * @source https://github.com/its-x3non/DiscordSnippets/tree/main/ProperMessages
 */
 
 @keyframes rainbowColor {
@@ -22,6 +22,11 @@
   83% { background-color: rgb(255, 0, 255, .2); }
   91% { background-color: rgb(255, 0, 127, .2); }
 }
+
+/* ========================================= */
+/* align self messages to the right by seele */
+/*          taken from vencord               */
+/* ========================================= */
 
 [class^=messageListItem__][data-is-self="true"] {
 margin-left: auto;
@@ -67,9 +72,7 @@ padding-right: 48px;
   }
 }
 
-/* =============== */
 /* message bubbles */
-/* =============== */
 [class^=contents_] [class^="markup"]:not(:empty, code),
 .container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
   border: 2px solid var(--default-msg-color);
@@ -89,15 +92,22 @@ padding-right: 48px;
 .container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
   border: 2px solid var(--attachment-color);
   background-color: var(--attachment-color);
-  animation: rainbowColor 5s linear infinite; /* you can comment this out if you don't want a rainbow */
+  animation: rainbowColor 5s linear infinite;
 }
 
-/* my color :3 */
+/* your color :3 */
 .messageListItem__050f9[data-is-self="true"] >
 .cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code){
   border: 2px solid var(--self-color);
   background-color: var(--self-color);
 } 
+
+/* no use for now - checks if images/contents are mine
+.messageListItem__050f9[data-is-self="true"] >
+.cozyMessage_9f4fd [class^="container"] > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
+  border: 2px solid hsla(260, 50%, 65%, 0.35);
+  background-color: hsla(260, 25%, 45%, 0.25);
+} */
 
 /* ======================= */
 /* Timestamps by SEELE1306 */
@@ -123,7 +133,7 @@ padding-right: 48px;
   top: 2px;
 }
 
-/* if not me */
+/* if not self */
 .contents_d3ae0d [class^="timestamp"]:not(:has(time)) {
   background: var(--default-time-color);
   padding: 0 4px 0 2px;
@@ -135,7 +145,7 @@ padding-right: 48px;
   padding: 0 4px;
 }
 
-/* if me */
+/* self time */
 .messageListItem__050f9[data-is-self="true"]
 .contents_d3ae0d [class^="timestamp"]:not(:has(time)) {
   background: var(--self-time-color);
@@ -147,9 +157,9 @@ padding-right: 48px;
   top: 0;
 }
 
-/* =========================================== */
-/* username (and tags), avatars, n other stuff */
-/* =========================================== */
+/* ==================================== */
+/* username (and tags) and avatar stuff */
+/* ==================================== */
 
 /* adds shadowing to avatar (not avatar deco) */
 .contents_d3ae0d .avatar__08316 {
@@ -157,12 +167,15 @@ padding-right: 48px;
   box-shadow: 0 2px 4px 1px black;
 }
 
-/* moves avatar down & username up */
-.contents_d3ae0d [class^="avatar"] { top: calc(100% - 48px); } 
-.contents_d3ae0d [class^="username"]{ top: -2px; }
+.contents_d3ae0d [class^="avatar"] { top: calc(100% - 48px); } /* aligns avatar with last sent groupStart msg */
+.contents_d3ae0d [class^="username"] { top: -1px; } /* moves username up one pixel */
+.contents_d3ae0d [class^="header"] { top: -3px; } /* moves header stuff up 3 pixels */
 
-/* moves header stuff up 3 pixels */
-.contents_d3ae0d [class^="header"]{ top: -3px; }
+/* adds shadowing to avatar (not avatar deco) */
+.contents_d3ae0d .avatar__08316 {
+  border-radius: 35%;
+  box-shadow: 0 2px 4px 1px black;
+}
 
 /* bot stuff */
 .botTag__11e95:not([class*="botTagOP"]){
@@ -175,6 +188,10 @@ padding-right: 48px;
   background: hsla(0, 0%, 100%, 0.25);
   box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.55);
 }
+
+/* === */
+/* etc */
+/* === */
 
 /* removes the reply/thread stuff */
 .repliedMessage__636d2::before, 
@@ -189,5 +206,5 @@ padding-right: 48px;
 }
 
 /* fixes */
-.content__945f5 [class^="timestamp"]{ top: -1px; } /* fixed edit/time stamp in text */
-.content__945f5 { color: rgba(255,255,255,.5) } /* fixed call text */
+.content__945f5 [class^="timestamp"]{ top: -1px; } /* timestamp in call log aligned */
+.content__945f5 { color: rgba(255,255,255,.5) } /* you missed a call from [user] text n stuff colored white */
