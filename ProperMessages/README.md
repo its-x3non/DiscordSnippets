@@ -1,4 +1,4 @@
-# Useage
+# Usage
 > [!IMPORTANT]  
 > If you want proper messaging allignment, i.e, your messages on the right side, use [Vencord](https://github.com/Vendicated/Vencord).  
 > BetterDiscord won't work as this uses ThemeAttributes plugin in Vencord.
