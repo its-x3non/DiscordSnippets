@@ -7,22 +7,6 @@
   * @source https://github.com/its-x3non/DiscordSnippets/tree/main/ProperMessages
 */
 
-@keyframes rainbowColor {
-  100%,
-  0% { background-color: rgb(255, 0, 0, .2); }
-  8% { background-color: rgb(255, 127, 0, .2); }
-  16% { background-color: rgb(255, 255, 0, .2); }
-  25% { background-color: rgb(127, 255, 0, .2); }
-  33% { background-color: rgb(0, 255, 0, .2); }
-  41% { background-color: rgb(0, 255, 127, .2); }
-  50% { background-color: rgb(0, 255, 255, .2); }
-  58% { background-color: rgb(0, 127, 255, .2); }
-  66% { background-color: rgb(0, 0, 255, .2); }
-  75% { background-color: rgb(127, 0, 255, .2); }
-  83% { background-color: rgb(255, 0, 255, .2); }
-  91% { background-color: rgb(255, 0, 127, .2); }
-}
-
 /* ========================================= */
 /* align self messages to the right by seele */
 /*          taken from vencord               */
@@ -73,11 +57,11 @@ padding-right: 48px;
 }
 
 /* message bubbles */
-[class^=contents_] [class^="markup"]:not(:empty, code){
+[class^=contents_] [class^="markup"]:not(:empty, code),
+.container__17159{
   border: 2px solid var(--default-msg-color);
   background-color: var(--default-msg-color);
   border-radius: 10px;
-  letter-spacing: 0.1mm;
   max-width: 500px;
   box-sizing: border-box;
   display: inline-block;
@@ -88,17 +72,11 @@ padding-right: 48px;
 
 /* your color :3 */
 .messageListItem__050f9[data-is-self="true"] >
-.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code){
+.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
+.messageListItem__050f9[data-is-self="true"] > .cozyMessage__9f4fd .container__17159{
   border: 2px solid var(--self-color);
   background-color: var(--self-color);
 } 
-
-/* no use for now - checks if images/contents are mine
-.messageListItem__050f9[data-is-self="true"] >
-.cozyMessage_9f4fd [class^="container"] > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
-  border: 2px solid hsla(260, 50%, 65%, 0.35);
-  background-color: hsla(260, 25%, 45%, 0.25);
-} */
 
 /* ======================= */
 /* Timestamps by SEELE1306 */
@@ -115,6 +93,7 @@ padding-right: 48px;
   border-radius: 5px;
   top: -4px;
   line-height: 1rem !important;
+  /* box-shadow: 0 2px 1px 0.5px black; */
 }
 
 .contents_d3ae0d [class^="botTagCozy_"] {
