@@ -73,8 +73,7 @@ padding-right: 48px;
 }
 
 /* message bubbles */
-[class^=contents_] [class^="markup"]:not(:empty, code),
-.container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
+[class^=contents_] [class^="markup"]:not(:empty, code){
   border: 2px solid var(--default-msg-color);
   background-color: var(--default-msg-color);
   border-radius: 10px;
@@ -84,16 +83,8 @@ padding-right: 48px;
   display: inline-block;
   padding: 8px;
   margin: 0;
-  box-shadow: 0 2px 4px 0.5px black;
   position:relative;
 } 
-
-/* attachment/embed color */
-.container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
-  border: 2px solid var(--attachment-color);
-  background-color: var(--attachment-color);
-  animation: rainbowColor 5s linear infinite;
-}
 
 /* your color :3 */
 .messageListItem__050f9[data-is-self="true"] >
@@ -124,7 +115,6 @@ padding-right: 48px;
   border-radius: 5px;
   top: -4px;
   line-height: 1rem !important;
-  /* box-shadow: 0 2px 1px 0.5px black; */
 }
 
 .contents_d3ae0d [class^="botTagCozy_"] {
@@ -170,12 +160,6 @@ padding-right: 48px;
 .contents_d3ae0d [class^="avatar"] { top: calc(100% - 48px); } /* aligns avatar with last sent groupStart msg */
 .contents_d3ae0d [class^="username"] { top: -1px; } /* moves username up one pixel */
 .contents_d3ae0d [class^="header"] { top: -3px; } /* moves header stuff up 3 pixels */
-
-/* adds shadowing to avatar (not avatar deco) */
-.contents_d3ae0d .avatar__08316 {
-  border-radius: 35%;
-  box-shadow: 0 2px 4px 1px black;
-}
 
 /* bot stuff */
 .botTag__11e95:not([class*="botTagOP"]){
