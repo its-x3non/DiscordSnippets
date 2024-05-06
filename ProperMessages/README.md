@@ -1,7 +1,6 @@
 # Usage
 > [!IMPORTANT]  
 > If you want proper messaging allignment, i.e, your messages on the right side, use [Vencord](https://github.com/Vendicated/Vencord).  
-> BetterDiscord won't work as this uses ThemeAttributes plugin in Vencord.  
 > My main focus is Vencord, but I will work on a BetterDiscord Version at a later date.
 
 ## Root to place in Quick CSS
