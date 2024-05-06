@@ -59,6 +59,7 @@ padding-right: 48px;
 /* message bubbles */
 [class^=contents_] [class^="markup"]:not(:empty, code),
 .container__17159{
+  color: var(--default-text-color);
   border: 2px solid var(--default-msg-color);
   background-color: var(--default-msg-color);
   border-radius: 10px;
@@ -76,6 +77,7 @@ padding-right: 48px;
 .messageListItem__050f9[data-is-self="true"] > .cozyMessage__9f4fd .container__17159{
   border: 2px solid var(--self-color);
   background-color: var(--self-color);
+  color: var(--self-text-color);
 } 
 
 /* ======================= */
