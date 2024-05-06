@@ -5,7 +5,7 @@
 
 ## Root to place in Quick CSS
 ```css
-@import('https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css');
+@import url('https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css');
 
   :root {
     --default-msg-color: rgba(210, 210, 210, 0.2);
@@ -57,7 +57,7 @@
 ___
 # Here's what your QuickCSS file could look like
 ```css
-@import('https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css');
+@import url('https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css');
 
   :root {
     --default-msg-color: rgba(210, 210, 210, 0.2);
