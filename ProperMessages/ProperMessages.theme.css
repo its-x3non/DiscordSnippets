@@ -138,7 +138,6 @@ padding-right: 48px;
 
 .contents_d3ae0d [class^="avatar"] { top: calc(100% - 48px); } /* aligns avatar with last sent groupStart msg */
 .contents_d3ae0d [class^="username"] { top: -1px; } /* moves username up one pixel */
-.contents_d3ae0d [class^="header"] { top: -3px; } /* moves header stuff up 3 pixels */
 
 /* bot stuff */
 .botTag__11e95:not([class*="botTagOP"]){
