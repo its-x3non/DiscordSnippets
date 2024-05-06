@@ -13,6 +13,9 @@
   
     --default-time-color: rgba(210, 210, 210, .5);
     --self-time-color: rgba(204, 108, 231, .5);
+
+    --default-text-color: rgb(255, 255, 255);
+    --self-text-color: rgb(240, 187, 255);
   }
 ```
 ## You can also add the following if you want to include your friends too:
@@ -20,6 +23,7 @@
   :root {
     --(NAME GOES HERE)-color: rgba(R, G, B, .2);
     --(NAME GOES HERE)-time-color: rgba(R, G, B, .5);
+    --(NAME GOES HERE)-text-color: rgb(R, G, B);
   }
 
   /* FRIEND BUBBLE COLOR */
@@ -28,6 +32,7 @@
   .messageListItem__050f9[data-author-id="FRIEND ID GOES HERE"] > .cozyMessage__9f4fd .container__17159{
     border: 2px solid var(--(NAME GOES HERE)-color);
     background-color: var(--(NAME GOES HERE)-color);
+    color: var(--(NAME GOES HERE)-text-color);
   } 
 
   /* FRIEND TIME STAMP */
@@ -55,6 +60,10 @@ ___
     --(NAME GOES HERE)-time-color: rgba(R, G, B, .5);
     --default-time-color: rgba(210, 210, 210, .5);
     --self-time-color: rgba(204, 108, 231, .5);
+
+    --default-text-color: rgb(255, 255, 255);
+    --self-text-color: rgb(240, 187, 255);
+    --(NAME GOES HERE)-text-color: rgb(R, G, B);
   }
 
   /* FRIEND BUBBLE COLOR */
@@ -63,6 +72,7 @@ ___
   .messageListItem__050f9[data-author-id="FRIEND ID GOES HERE"] > .cozyMessage__9f4fd .container__1715{
     border: 2px solid var(--(NAME GOES HERE)-color);
     background-color: var(--(NAME GOES HERE)-color);
+    color: var(--(NAME GOES HERE)-text-color);
   } 
 
   /* FRIEND TIME STAMP */
@@ -75,10 +85,5 @@ ___
   .contents_d3ae0d [class^="timestamp"]:has(time) {
     background: var(--(NAME GOES HERE)-time-color);
     border: 1px solid var(--(NAME GOES HERE)-time-color);
-  }
-    
-    /* attachment/embed color */
-  .container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
-    animation: none;
   }
 ```
