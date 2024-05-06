@@ -16,6 +16,9 @@
 
     --default-text-color: rgb(255, 255, 255);
     --self-text-color: rgb(240, 187, 255);
+
+    --default-accent: rgb(170, 239, 252);
+    --self-accent: rgb(4, 4, 167);
   }
 ```
 ## You can also add the following if you want to include your friends too:
@@ -24,6 +27,7 @@
     --(NAME GOES HERE)-color: rgba(R, G, B, .2);
     --(NAME GOES HERE)-time-color: rgba(R, G, B, .5);
     --(NAME GOES HERE)-text-color: rgb(R, G, B);
+    --(NAME-GOES-HERE)-accent: rgb(R, G, B);
   }
 
   /* FRIEND BUBBLE COLOR */
@@ -33,6 +37,9 @@
     border: 2px solid var(--(NAME GOES HERE)-color);
     background-color: var(--(NAME GOES HERE)-color);
     color: var(--(NAME GOES HERE)-text-color);
+      --text-brand: var(--(NAME-GOES-HERE)-accent);
+    	--text-link: var(--(NAME-GOES-HERE)-accent);
+    	--mention-foreground: var(--(NAME-GOES-HERE)-accent);
   } 
 
   /* FRIEND TIME STAMP */
@@ -64,6 +71,10 @@ ___
     --default-text-color: rgb(255, 255, 255);
     --self-text-color: rgb(240, 187, 255);
     --(NAME GOES HERE)-text-color: rgb(R, G, B);
+
+    --default-accent: rgb(170, 239, 252);
+    --self-accent: rgb(4, 4, 167);
+    --(NAME-GOES-HERE)-accent: rgb(R, G, B);
   }
 
   /* FRIEND BUBBLE COLOR */
@@ -73,6 +84,9 @@ ___
     border: 2px solid var(--(NAME GOES HERE)-color);
     background-color: var(--(NAME GOES HERE)-color);
     color: var(--(NAME GOES HERE)-text-color);
+      --text-brand: var(--(NAME-GOES-HERE)-accent);
+    	--text-link: var(--(NAME-GOES-HERE)-accent);
+    	--mention-foreground: var(--(NAME-GOES-HERE)-accent);
   } 
 
   /* FRIEND TIME STAMP */
