@@ -32,7 +32,8 @@
 
   /* FRIEND BUBBLE COLOR */
   .messageListItem__050f9[data-author-id="FRIEND ID GOES HERE"] >
-  .cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code){
+  .cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
+  .messageListItem__050f9[data-author-id="FRIEND ID GOES HERE"] > .cozyMessage__9f4fd .container__17159{
     border: 2px solid var(--(NAME GOES HERE)-color);
     background-color: var(--(NAME GOES HERE)-color);
   } 
@@ -66,7 +67,8 @@ ___
 
   /* FRIEND BUBBLE COLOR */
   .messageListItem__050f9[data-author-id="FRIEND ID GOES HERE"] >
-  .cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code){
+  .cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
+  .messageListItem__050f9[data-author-id="FRIEND ID GOES HERE"] > .cozyMessage__9f4fd .container__1715{
     border: 2px solid var(--(NAME GOES HERE)-color);
     background-color: var(--(NAME GOES HERE)-color);
   } 
