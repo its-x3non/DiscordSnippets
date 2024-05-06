@@ -7,6 +7,12 @@
   * @source https://github.com/its-x3non/DiscordSnippets/tree/main/ProperMessages
 */
 
+:root{
+	--text-brand: var(--default-accent);
+	--text-link: var(--default-accent);
+	--mention-foreground: var(--default-accent);
+}
+
 /* ========================================= */
 /* align self messages to the right by seele */
 /*          taken from vencord               */
@@ -78,6 +84,9 @@ padding-right: 48px;
   border: 2px solid var(--self-color);
   background-color: var(--self-color);
   color: var(--self-text-color);
+  	--text-brand: var(--self-accent);
+	--text-link: var(--self-accent);
+	--mention-foreground: var(--self-accent);
 } 
 
 /* ======================= */
@@ -87,7 +96,7 @@ padding-right: 48px;
 
 .contents_d3ae0d [class^="timestamp"] {
   position: relative;
-  color: var(--default-text-color) !important;
+  color: var(--default-text-color);
   letter-spacing: 0.05em;
   font-size: 10px !important;
   margin: 0 4px;
@@ -119,11 +128,13 @@ padding-right: 48px;
 .messageListItem__050f9[data-is-self="true"]
 .contents_d3ae0d [class^="timestamp"]:not(:has(time)) {
   background: var(--self-time-color);
+  color: var(--self-text-color)
 }
 .messageListItem__050f9[data-is-self="true"]
 .contents_d3ae0d [class^="timestamp"]:has(time) {
   background: var(--self-time-color);
   border: 1px solid var(--self-time-color);
+  color: var(--self-text-color);
   top: 0;
 }
 
@@ -169,5 +180,5 @@ padding-right: 48px;
 }
 
 /* fixes */
-.content__945f5 [class^="timestamp"]{ top: -1px; } /* timestamp in call log aligned */
-.content__945f5 { color: rgba(255,255,255,.5) } /* you missed a call from [user] text n stuff colored white */
+.content__945f5 [class^="timestamp"]{ top: -1px; }
+.content__945f5 { color: rgba(255,255,255,.5) }
