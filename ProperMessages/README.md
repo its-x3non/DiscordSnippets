@@ -15,14 +15,6 @@
     --self-time-color: rgba(204, 108, 231, .5);
   }
 ```
-### You can also include this if you don't want rainbow attachments:
-```css
-  /* attachment/embed color */
-  .container__62863 > :not(.reactions_da5b2a, .searchResultsWrap__2e184 *) {
-    animation: none;
-  }
-```
-
 ## You can also add the following if you want to include your friends too:
 ```css
   :root {
