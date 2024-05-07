@@ -51,7 +51,7 @@
 	}
 	
 	/* username color */
-	[class^="contents"] [class^="username"] { color: var(--(FRIEND NAME)-text-color); }
+	[class^="contents"] [class^="username"] { color: var(--(FRIEND NAME)-text-color) !important; }
 } 
 ```
 ___
