@@ -20,32 +20,37 @@
   border: 2px solid var(--default-msg-color);
   background-color: var(--default-msg-color);
   border-radius: 10px;
-  max-width: 500px;
+  max-width: 650px;
   box-sizing: border-box;
   display: inline-block;
   padding: 8px;
   margin: 0;
-  position:relative;
+  position: relative;
 } 
-
-.messageListItem__050f9[data-is-self="true"] >
-.groupStart__7b93c > [class^="contents"] > [class^="markup"]
-{
-	text-align: justify;
-}
-
 
 /* your color :3 */
-.messageListItem__050f9[data-is-self="true"] >
-.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
-.messageListItem__050f9[data-is-self="true"] > .cozyMessage__9f4fd .container__17159{
-  border: 2px solid var(--self-color);
-  background-color: var(--self-color);
-  color: var(--self-text-color);
-  	--text-brand: var(--self-accent);
-	--text-link: var(--self-accent);
-	--mention-foreground: var(--self-accent);
-} 
+.messageListItem__050f9[data-is-self="true"] {
+	.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
+	.cozyMessage__9f4fd .container__17159 {
+	  border: 2px solid var(--self-color);
+	  background-color: var(--self-color);
+	  color: var(--self-text-color);
+		--text-brand: var(--self-accent);
+		--text-link: var(--self-accent);
+		--mention-foreground: var(--self-accent);
+	} 
+	
+	/* time */
+	.contents_d3ae0d [class^="timestamp"]:not(:has(time)) { background: var(--self-time-color); }
+	.contents_d3ae0d [class^="timestamp"]:has(time) {
+	  background: var(--self-time-color);
+	  border: 1px solid var(--self-time-color);
+	  color: var(--self-text-color);
+	}
+	
+	/* username color */
+	[class^="contents"] [class^="username"] { color: var(--self-text-color); }
+}
 
 /* ======================= */
 /* Timestamps by SEELE1306 */
@@ -80,20 +85,6 @@
   background: var(--default-time-color);
   border: 1px solid var(--default-time-color);
   padding: 0 4px;
-}
-
-/* self time */
-.messageListItem__050f9[data-is-self="true"]
-.contents_d3ae0d [class^="timestamp"]:not(:has(time)) {
-  background: var(--self-time-color);
-  color: var(--self-text-color)
-}
-.messageListItem__050f9[data-is-self="true"]
-.contents_d3ae0d [class^="timestamp"]:has(time) {
-  background: var(--self-time-color);
-  border: 1px solid var(--self-time-color);
-  color: var(--self-text-color);
-  
 }
 
 /* ==================================== */
