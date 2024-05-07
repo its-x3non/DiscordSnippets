@@ -24,34 +24,34 @@
 ## You can also add the following if you want to include your friends too:
 ```css
   :root {
-    --(NAME GOES HERE)-color: rgba(R, G, B, .2);
-    --(NAME GOES HERE)-time-color: rgba(R, G, B, .5);
-    --(NAME GOES HERE)-text-color: rgb(R, G, B);
-    --(NAME-GOES-HERE)-accent: rgb(R, G, B);
+    --(FRIEND NAME)-color: rgba(R, G, B, .2);
+    --(FRIEND NAME)-time-color: rgba(R, G, B, .5);
+    --(FRIEND NAME)-text-color: rgb(R, G, B);
+    --(FRIEND NAME)-accent: rgb(R, G, B);
   }
 
 .messageListItem__050f9[data-author-id="FRIEND ID"] {
 /* chat bubble */
 	.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
 	.cozyMessage__9f4fd .container__17159 {
-	  border: 2px solid var(--goat-color);
-	  background-color: var(--goat-color);
-	  color: var(--goat-text-color);
-		--text-brand: var(--goat-accent);
-		--text-link: var(--goat-accent);
-		--mention-foreground: var(--goat-accent);
+	  border: 2px solid var(--(FRIEND NAME)-color);
+	  background-color: var(--(FRIEND NAME)-color);
+	  color: var(--(FRIEND NAME)-text-color);
+		--text-brand: var(--(FRIEND NAME)-accent);
+		--text-link: var(--(FRIEND NAME)-accent);
+		--mention-foreground: var(--(FRIEND NAME)-accent);
 	}
 	
 	/* time */
 	.contents_d3ae0d [class^="timestamp"]:not(:has(time)) { background: var(--goat-time-color); }
 	.contents_d3ae0d [class^="timestamp"]:has(time) {
-	  background: var(--goat-time-color);
-	  border: 1px solid var(--goat-time-color);
-	  color: var(--goat-text-color);
+	  background: var(--(FRIEND NAME)-time-color);
+	  border: 1px solid var(--(FRIEND NAME)-time-color);
+	  color: var(--(FRIEND NAME)-text-color);
 	}
 	
 	/* username color */
-	[class^="contents"] [class^="username"] { color: var(--goat-text-color); }
+	[class^="contents"] [class^="username"] { color: var(--(FRIEND NAME)-text-color); }
 } 
 ```
 ___
