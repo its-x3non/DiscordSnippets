@@ -43,12 +43,7 @@
 	}
 	
 	/* time */
-	.contents_d3ae0d [class^="timestamp"]:not(:has(time)) { background: var(--goat-time-color); }
-	.contents_d3ae0d [class^="timestamp"]:has(time) {
-	  background: var(--(FRIEND NAME)-time-color);
-	  border: 1px solid var(--(FRIEND NAME)-time-color);
-	  color: var(--(FRIEND NAME)-text-color);
-	}
+	.contents_d3ae0d [class^="timestamp"]:has(time) { color: var(--(FRIEND NAME)-text-color); }
 	
 	/* username color */
 	[class^="contents"] [class^="username"] { color: var(--(FRIEND NAME)-text-color) !important; }
