@@ -31,7 +31,9 @@
 } 
 
 /* accents */
-.embedTitle__1ac59 { color: var(--default-accent) !important; }
+.messageListItem__050f9 {
+	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--default-accent) !important; }
+}
 
 /* your color :3 */
 .messageListItem__050f9[data-is-self="true"] {
