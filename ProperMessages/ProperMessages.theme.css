@@ -7,6 +7,8 @@
   * @source https://github.com/its-x3non/DiscordSnippets/tree/main/ProperMessages
 */
 
+@import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/addons/RightAlign.css");
+
 :root{
 	--text-brand: var(--default-accent);
 	--text-link: var(--default-accent);
@@ -41,64 +43,24 @@
 	} 
 	
 	/* time */
-	.contents_d3ae0d { 
-		[class^="timestamp"]:not(:has(time)) { background: var(--self-time-color); } 
-		[class^="timestamp"]:has(time) {
-			  background: var(--self-time-color);
-			  border: 1px solid var(--self-time-color);
-			  color: var(--self-text-color); 
-			}
-		}
+	.contents_d3ae0d [class^="timestamp"]:has(time) 
+	{ color: var(--self-color); }
+		
 
-	/* username color */
+	/* other colors n such */
+	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--self-accent) !important; }
 	[class^="contents"] [class^="username"] { color: var(--self-text-color) !important; }
 }
 
-/* ======================= */
-/* Timestamps by SEELE1306 */
-/*  Vencord CSS Snippets   */
-/* ======================= */
-.contents_d3ae0d{
-	[class^="timestamp"] {
-	  position: relative;
-	  color: var(--default-text-color);
-	  letter-spacing: 0.05em;
-	  font-size: 11px !important;
-	  margin: 0 4px;
-	  height: 16px;
-	  border-radius: 5px;
-	  top: -4px;
-	  line-height: 1rem !important;
-	}
-	
-	[class^="timestamp"]:not(:has(time)) {
-	  background: var(--default-time-color);
-	  padding: 0 4px 0 2px;
-	}
-	
-	[class^="timestamp"]:has(time) {
-	  background: var(--default-time-color);
-	  border: 1px solid var(--default-time-color);
-	  padding: 0 4px;
-	}
-	
-	[class^="botTagCozy_"] {
-	  line-height: 1rem;
-	  height: 16px;
-	  top: 2px;
-	}
-}
 /* ==================================== */
 /* username (and tags) and avatar stuff */
 /* ==================================== */
-.contents_d3ae0d {
+[class^="contents_"] {
 	/* adds shadowing to avatar (not avatar deco) */
 	.avatar__08316 {
 	  border-radius: 35%;
 	  box-shadow: 0 2px 4px 1px black;
-	}
-	
-	[class^="username"] { top: -2px; } /* moves username up 2 pixels */
+	}	
 }
 
 /* bot stuff */
@@ -132,5 +94,18 @@
 /* fixes */
 .content__945f5 {
 	color: rgba(255,255,255,.7); /* makes text a bit more readable */
-	[class^="timestamp"]{ top: -1px; } /* moves timestamp up 1 pixel */
 }
+
+/* lightens username next to nickname */
+[class^="vc-smyn-suffix"]{ color: var(--default-time-color); }	
+
+/* ======================================================== */
+/* Add the @ back to usernames in profiles By Riddim_Glitch */
+/* 	  		Taken from BD - Modified by x3non   			*/
+/* ======================================================== */
+[class^="discriminator__"], [class^="userTagUsernameBase__"] {
+	&::before {
+		padding-right: 1.5px;
+		content: "@";
+	}
+}	
