@@ -10,18 +10,16 @@ These are also the default settings if you ever want to revert back
 
 :root {
   --default-msg-color: hsla(0, 0%, 82%, 0.2);
-  --self-color: hsla(286, 72%, 66%, 0.2) ;
+  --self-color: hsla(286, 72%, 66%, 0.2);
 
   --default-time-color: hsla(0, 0%, 82%, 0.45);
   --self-time-color: hsla(286, 72%, 66%, 0.45);
 
   --default-text-color: hsla(0, 0%, 100%);
-  --self-text-color: hsl(287, 100%, 80%);
+  --self-text-color: hsl(286, 100%, 80%);
 
   --default-accent: hsl(205, 100%, 50%);
-  --self-accent: hsl(287, 100%, 90%);
-
-  --accent-1: var(--self-accent); /* links */
+  --self-accent: hsl(286, 100%, 90%);
 }
 ```
 ## You can also add the following if you want to include your friends too:
