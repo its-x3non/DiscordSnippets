@@ -4,22 +4,31 @@
 > My main focus is Vencord, but I will work on a BetterDiscord Version at a later date.
 
 ## Root to place in Quick CSS
+These are also the default settings if you ever want to revert back
 ```css
 @import url('https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css');
 
-  :root {
-    --default-msg-color: rgba(210, 210, 210, 0.2);
-    --self-color: rgba(204, 108, 231, .2);
-  
-    --default-time-color: rgba(210, 210, 210, .5);
-    --self-time-color: rgba(204, 108, 231, .5);
+:root {
+  --default-msg-color: hsla(0, 0%, 82%, 0.2);
+  --self-color: hsla(286, 72%, 66%, 0.2) ;
 
-    --default-text-color: rgb(255, 255, 255);
-    --self-text-color: rgb(240, 187, 255);
+  --default-time-color: hsla(0, 0%, 82%, 0.45);
+  --self-time-color: hsla(286, 72%, 66%, 0.45);
 
-    --default-accent: rgb(170, 239, 252);
-    --self-accent: rgb(4, 4, 167);
-  }
+  --default-text-color: hsla(0, 0%, 100%);
+  --self-text-color: hsl(287, 100%, 80%);
+
+  --default-accent: var(--accent-1);
+  --self-accent: hsl(287, 100%, 90%);
+
+  --accent-1: var(--self-accent); /* links */
+  --accent-2: hsla(276, 80%, 66%); /* general unread/mention elements */
+  --accent-3: hsla(276, 80%, 66%); /* accent buttons */
+  --accent-4: hsl(276, 75%, 80%); /* accent buttons when hovered */
+  --accent-5: hsl(276, 50%, 40%); /* accent buttons when clicked */
+  --mention: hsla(286, 72%, 66%, 0.1); /* mentions & mention messages */
+  --mention-hover: hsla(286, 72%, 66%, 0.05); /* mentions & mention messages when hovered */
+}
 ```
 ## You can also add the following if you want to include your friends too:
 ```css
