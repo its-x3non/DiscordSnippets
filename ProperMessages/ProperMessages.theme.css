@@ -53,9 +53,9 @@
 	} 
 }
 
-/* ==================================== */
-/* username (and tags) and avatar stuff */
-/* ==================================== */
+/**
+ * username (and tags) and avatar stuff
+ */
 [class^="contents_"] {
 	/* adds shadowing to avatar (not avatar deco) */
 	.avatar__08316 {
@@ -76,9 +76,9 @@
   box-shadow: 0 0 0 1px hsla(0, 0%, 100%, 0.55);
 }
 
-/* === */
-/* etc */
-/* === */
+/**
+ * etc 
+ */
 
 /* removes the reply/thread stuff */
 .repliedMessage__636d2::before, 
@@ -100,10 +100,10 @@
 /* lightens username next to nickname */
 [class^="vc-smyn-suffix"]{ color: var(--default-time-color); }	
 
-/* ======================================================== */
-/* Add the @ back to usernames in profiles By Riddim_Glitch */
-/* 	  		Taken from BD - Modified by x3non   			*/
-/* ======================================================== */
+/**
+ * Add the @ back to usernames in profiles By Riddim_Glitch 
+ * 	  		Taken from BD - Modified by x3non   			
+ */
 [class^="discriminator__"], [class^="userTagUsernameBase__"] {
 	&::before {
 		padding-right: 1.5px;
