@@ -18,7 +18,7 @@ These are also the default settings if you ever want to revert back
   --default-text-color: hsla(0, 0%, 100%);
   --self-text-color: hsl(287, 100%, 80%);
 
-  --default-accent: hsl(185, 100%, 50%);
+  --default-accent: hsl(205, 100%, 50%);
   --self-accent: hsl(287, 100%, 90%);
 
   --accent-1: var(--self-accent); /* links */
