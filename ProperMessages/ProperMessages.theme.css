@@ -30,6 +30,9 @@
   position:relative;
 } 
 
+/* accents */
+.embedTitle__1ac59 { color: var(--default-accent) !important; }
+
 /* your color :3 */
 .messageListItem__050f9[data-is-self="true"] {
 	.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
@@ -42,14 +45,12 @@
 		--mention-foreground: var(--self-accent);
 	} 
 	
-	/* time */
-	.contents_d3ae0d [class^="timestamp"]:has(time) 
-	{ color: var(--self-color); }
-		
-
 	/* other colors n such */
 	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--self-accent) !important; }
-	[class^="contents"] [class^="username"] { color: var(--self-text-color) !important; }
+	[class^="contents"] {
+		[class^="username"] { color: var(--self-text-color) !important; }
+		[class^="timestamp"]:has(time) { color: var(--self-color); }
+	} 
 }
 
 /* ==================================== */
