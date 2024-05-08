@@ -22,12 +22,6 @@ These are also the default settings if you ever want to revert back
   --self-accent: hsl(287, 100%, 90%);
 
   --accent-1: var(--self-accent); /* links */
-  --accent-2: hsla(276, 80%, 66%); /* general unread/mention elements */
-  --accent-3: hsla(276, 80%, 66%); /* accent buttons */
-  --accent-4: hsl(276, 75%, 80%); /* accent buttons when hovered */
-  --accent-5: hsl(276, 50%, 40%); /* accent buttons when clicked */
-  --mention: hsla(286, 72%, 66%, 0.1); /* mentions & mention messages */
-  --mention-hover: hsla(286, 72%, 66%, 0.05); /* mentions & mention messages when hovered */
 }
 ```
 ## You can also add the following if you want to include your friends too:
