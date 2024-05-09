@@ -1,6 +1,7 @@
-// Selfmessages. Heavily based on Discord 11's Message bubbles 
-// From Riddim-GLiTCH's Virtual-Boy
-// Modified by x3non to work with Vencord
+/* Selfmessages. Heavily based on Discord 11's Message bubbles 
+* From Riddim-GLiTCH's Virtual-Boy
+* Modified by x3non to work with Vencord
+*/
 
 /* Message Bubbles*/
 #app-mount [class^=messageListItem__][data-is-self="true"] {
@@ -89,7 +90,7 @@
 }
 
 #app-mount .contents_d3ae0d .messageContent_abea64 {
-    padding: 0px;
+    padding: 8px;
     margin-left: unset;
     width: fit-content;
 }
