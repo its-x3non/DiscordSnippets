@@ -30,7 +30,7 @@
     display: block;
     width: fit-content;
     margin-left: auto;
-    margin-right: 18px;
+    margin-right: 12px;
 }
 #app-mount [class^=messageListItem__][data-is-self="true"].message_ccca67.selected_e3bc5d .contents_d3ae0d {
     width: 100%;
@@ -90,7 +90,7 @@
 }
 
 #app-mount .contents_d3ae0d .messageContent_abea64 {
-    padding: 8px;
+    padding: 0px;
     margin-left: unset;
     width: fit-content;
 }
