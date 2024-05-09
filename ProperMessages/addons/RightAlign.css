@@ -38,7 +38,9 @@
 #app-mount [class^=messageListItem__][data-is-self="true"] .timestamp_c79dd2 {
     left: unset;
     right: 8px;
+	margin-top: 1.75px;
 }
+
 #app-mount [class^=messageListItem__][data-is-self="true"] .repliedMessage__636d2 {
     margin-left: auto;
 }
@@ -87,7 +89,7 @@
 }
 
 #app-mount .contents_d3ae0d .messageContent_abea64 {
-    padding: 8px;
+    padding: 0px;
     margin-left: unset;
     width: fit-content;
 }
@@ -155,8 +157,4 @@
 }
 .repliedMessage__636d2:before {
     display: none;
-}
-
-[class*="markup-"][class*="messageContent-"]:not([class*="repliedTextPreview-"][class*="clickable-"] > div) {
-    background: linear-gradient(to right, black, black) !important;
 }
