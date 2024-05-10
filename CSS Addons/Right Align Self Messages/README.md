@@ -17,3 +17,15 @@ Have your messages align over to the right :)
 
 # Credits
 Based off of [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) by Riddim-GLiTCH
+### [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) Credits
+- [Saltssaumure](https://github.com/Saltssaumure) - For helping me set up the theme properly, the modified settings pane, and the CSS-rules to make everything squared.
+- [Blade04208](https://github.com/Blade04208) - for the watermarking tools used to display version numbers in the settings panel.
+- [DaBluLite](https://github.com/DaBluLite) - For the improved user account details in the settings pane, and for helping set up [Colorways][colorways] compatibility.
+- aoithesceneryhoarder from the Vencord server - For the message bubbles and for the improved channel category dividers.
+- [f53](https://f53.dev/) from the Vencord Server - For the improved chat input area, and the extended markdown fixes.
+- [Vendicated](https://github.com/Vendicated) - for the About Me cut-off fix.
+- [bernesealexxx](https://bernesealexxx.carrd.co/) from the Replugged server - for the CSS rules that re-add the "@" symbol back to usernames.
+- zeylogger - for the unread pill modification in the channels.
+- Barnyard - For the theme's Logo.
+- [inxomnyaa](https://github.com/inxomnyaa) - for the [Native Title Bar Size](https://github.com/inxomnyaa/DiscordNativeTitlebarSize)
+- Gibbu - for [Radial Status](https://github.com/DiscordStyles/RadialStatus)
