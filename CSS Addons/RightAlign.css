@@ -85,6 +85,11 @@
     padding: 0;
     margin-left: unset;
     width: fit-content;
+	max-width: 750px;
+}
+
+#app-mount .contents_d3ae0d .messageContent_abea64 > [class^=markup_]{
+	max-width: 750px;
 }
 
 #app-mount .contents_d3ae0d {
