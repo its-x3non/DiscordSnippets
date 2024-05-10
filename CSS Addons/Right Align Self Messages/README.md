@@ -18,14 +18,14 @@ Have your messages align over to the right :)
 # Credits
 From the "SelfMessages" Addon from Virtual Boy by [Riddim-GLiTCH](https://github.com/Riddim-GLiTCH)
 ### [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) Credits (Taken directly from the theme)
-- [Saltssaumure](https://github.com/Saltssaumure) - For helping me set up the theme properly, the modified settings pane, and the CSS-rules to make everything squared.
-- [Blade04208](https://github.com/Blade04208) - for the watermarking tools used to display version numbers in the settings panel.
-- [DaBluLite](https://github.com/DaBluLite) - For the improved user account details in the settings pane, and for helping set up [Colorways](https://github.com/DaBluLite/DiscordColorways) compatibility.
-- aoithesceneryhoarder from the Vencord server - For the message bubbles and for the improved channel category dividers.
-- [f53](https://f53.dev/) from the Vencord Server - For the improved chat input area, and the extended markdown fixes.
-- [Vendicated](https://github.com/Vendicated) - for the About Me cut-off fix.
-- [bernesealexxx](https://bernesealexxx.carrd.co/) from the Replugged server - for the CSS rules that re-add the "@" symbol back to usernames.
-- zeylogger - for the unread pill modification in the channels.
-- Barnyard - For the theme's Logo.
-- [inxomnyaa](https://github.com/inxomnyaa) - for the [Native Title Bar Size](https://github.com/inxomnyaa/DiscordNativeTitlebarSize)
-- Gibbu - for [Radial Status](https://github.com/DiscordStyles/RadialStatus)
+- [Saltssaumure](https://github.com/Saltssaumure)
+- [Blade04208](https://github.com/Blade04208)
+- [DaBluLite](https://github.com/DaBluLite) - [Colorways](https://github.com/DaBluLite/DiscordColorways) compatibility.
+- aoithesceneryhoarder from the Vencord server
+- [f53](https://f53.dev/) from the Vencord Server
+- [Vendicated](https://github.com/Vendicated)
+- [bernesealexxx](https://bernesealexxx.carrd.co/) from the Replugged server
+- zeylogger
+- Barnyard
+- [inxomnyaa](https://github.com/inxomnyaa) - [Native Title Bar Size](https://github.com/inxomnyaa/DiscordNativeTitlebarSize)
+- Gibbu - [Radial Status](https://github.com/DiscordStyles/RadialStatus)
