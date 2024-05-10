@@ -9,4 +9,8 @@ Have your messages align over to the right :)
 @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
 ```
 ## Example
-![Right Aligned Messages](right-aligned.png)
+![Right Aligned Messages](images/right-aligned.png)
+
+## Problems
+- REALLY SMALL WINDOW in threads doesn't align messages properly  
+![Problem 1](images/problem1.png)
