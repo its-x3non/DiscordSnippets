@@ -157,10 +157,15 @@
 }
 
 /** 
- * centers message actions on message
+ * moves message actions on message
  * by glaciercherrygatorade on discord
  */
 [class^="buttonContainer"]:has([class^="buttons__"]) {
   position: absolute;
-  right: calc(50% - 100px);
+  top: 50%;
+  margin-right: 20%;
+}
+
+#app-mount [class^="messageListItem__"][data-is-self="true"] [class^="buttonContainer"]:has([class^="buttons__"]) {
+	margin-right: 70%;
 }
