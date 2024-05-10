@@ -12,5 +12,5 @@ Have your messages align over to the right :)
 ![Right Aligned Messages](images/right-aligned.png)
 
 ## Problems
-- REALLY SMALL WINDOW in threads doesn't align messages properly  
-![Problem 1](images/problem1.png)
+- REALLY SMALL WINDOW and really LONG messages don't align properly  
+![Issue 1](images/issue1.png)
