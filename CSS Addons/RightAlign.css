@@ -153,3 +153,12 @@
 .repliedMessage__636d2:before {
     display: none;
 }
+
+/** 
+ * centers message actions on message
+ * by glaciercherrygatorade on discord
+ */
+[class^="buttonContainer"]:has([aria-label="Message Actions"]) {
+  position: absolute;
+  right: calc(50% - 100px);
+}
