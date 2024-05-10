@@ -1,9 +1,9 @@
-/* Selfmessages. Heavily based on Discord 11's Message bubbles 
-* From Riddim-GLiTCH's Virtual-Boy
-* Modified by x3non to work with Vencord
-*/
+/* 
+ * Right Align Self Messages. Heavily based on Discord 11's Message bubbles 
+ * From Riddim-GLiTCH's Virtual-Boy
+ * Modified by x3non to work with Vencord
+ */
 
-/* Message Bubbles*/
 #app-mount [class^=messageListItem__][data-is-self="true"] {
     margin-left: auto;
     width: auto;
@@ -31,6 +31,7 @@
     margin-left: auto;
     margin-right: 8px;
 }
+
 #app-mount [class^=messageListItem__][data-is-self="true"].message_ccca67.selected_e3bc5d .contents_d3ae0d {
     width: 100%;
 }
@@ -54,6 +55,7 @@
 #app-mount [class^=messageListItem__][data-is-self="true"] .contents_d3ae0d .messageContent_abea64 {
     margin-left: auto;
 }
+
 #app-mount [class^=messageListItem__][data-is-self="true"] a:not(.embed_cc6dae .embedAuthorNameLink_dd0d5f) {
     margin-left: auto;
 }
@@ -71,6 +73,7 @@
     display: flex;
     flex-direction: row-reverse;
 }
+
 #app-mount [class^=messageListItem__][data-is-self="true"] .header__6a14d span {
     margin-left: 0.25rem;
     margin-right: unset;
@@ -93,10 +96,12 @@
     margin-left: unset;
     width: fit-content;
 }
+
 #app-mount .contents_d3ae0d {
     display: inline-block;
     max-width: 100%;
 }
+
 #app-mount .message_ccca67 {
     max-width: 100%;
 }
@@ -113,6 +118,7 @@
 #app-mount .mentioned_fa6fd2.compact_eda3c8 .contents_d3ae0d .messageContent_abea64::before:not([class^=messageListItem__][data-is-self="true"]) {
     left: 4px;
 }
+
 #app-mount .replying__38514.compact_eda3c8 .contents_d3ae0d .messageContent_abea64::before:not([class^=messageListItem__][data-is-self="true"]) {
     left: 4px;
 }
@@ -129,6 +135,7 @@
     margin: 8px 0;
     z-index: 1;
 }
+
 #app-mount .mentioned_fa6fd2:before {
     display: none;
 }
