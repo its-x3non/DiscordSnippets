@@ -42,21 +42,15 @@
 	margin-top: 1.75px;
 }
 
-#app-mount [class^=messageListItem__][data-is-self="true"] .repliedMessage__636d2 {
-    margin-left: auto;
-}
-
 #app-mount [class^=messageListItem__][data-is-self="true"] .replying__38514 .contents_d3ae0d .messageContent_abea64::before,
-#app-mount [class^=messageListItem__][data-is-self="true"] .mentioned_fa6fd2 .contents_d3ae0d .messageContent_abea64::before {
+#app-mount [class^=messageListItem__][data-is-self="true"] .mentioned_fa6fd2 .contents_d3ae0d .messageContent_abea64::before,
+#app-mount [class^=messageListItem__][data-is-self="true"] .repliedMessage__636d2{
     left: unset;
     right: 0;
 }
 
-#app-mount [class^=messageListItem__][data-is-self="true"] .contents_d3ae0d .messageContent_abea64 {
-    margin-left: auto;
-}
-
-#app-mount [class^=messageListItem__][data-is-self="true"] a:not(.embed_cc6dae .embedAuthorNameLink_dd0d5f) {
+#app-mount [class^=messageListItem__][data-is-self="true"] .contents_d3ae0d .messageContent_abea64,
+#app-mount [class^=messageListItem__][data-is-self="true"] a:not(.embed_cc6dae .embedAuthorNameLink_dd0d5f){
     margin-left: auto;
 }
 
@@ -77,10 +71,6 @@
 #app-mount [class^=messageListItem__][data-is-self="true"] .header__6a14d span {
     margin-left: 0.25rem;
     margin-right: unset;
-}
-
-#app-mount [class^=messageListItem__][data-is-self="true"] .repliedMessage__636d2:before {
-    display: none;
 }
 
 #app-mount [class^=messageListItem__][data-is-self="true"] > .messageContent_abea64 {
@@ -136,10 +126,6 @@
     z-index: 1;
 }
 
-#app-mount .mentioned_fa6fd2:before {
-    display: none;
-}
-
 #app-mount .repliedMessage__636d2 {
     padding: 6px;
     width: fit-content;
@@ -159,9 +145,10 @@
     z-index: 1;
 }
 
-.replying__38514:before {
-    display: none;
-}
+#app-mount [class^=messageListItem__][data-is-self="true"] .repliedMessage__636d2:before,
+#app-mount .mentioned_fa6fd2:before,
+.replying__38514:before,
 .repliedMessage__636d2:before {
     display: none;
 }
+
