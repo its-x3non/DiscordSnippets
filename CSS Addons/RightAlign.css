@@ -158,7 +158,7 @@
  * centers message actions on message
  * by glaciercherrygatorade on discord
  */
-[class^="buttonContainer"]:has([aria-label="Message Actions"]) {
+[class^="buttonContainer"]:has([class^="buttons__"]) {
   position: absolute;
   right: calc(50% - 100px);
 }
