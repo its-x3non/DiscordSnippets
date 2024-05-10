@@ -40,13 +40,16 @@
 	border: 2px solid var(--default-msg-color);
 	background-color: var(--default-msg-color);
 	border-radius: 10px;
-	max-width: 85% !important;
+	width: fit-content;
+	max-width: 500px !important;
 	box-sizing: border-box;
 	display: inline-block;
 	padding: 8px !important;
 	margin: 0;
-	position:relative;
+	position: relative;
   } 
+  
+  
   
   /* Accents */
   .messageListItem__050f9 {
