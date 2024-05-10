@@ -14,3 +14,6 @@ Have your messages align over to the right :)
 ## Problems
 - REALLY SMALL WINDOW and really LONG messages don't align properly (in threads)
 ![Issue 1](images/issue1.png)
+
+# Credits
+Based off of [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) by Riddim-GLiTCH
