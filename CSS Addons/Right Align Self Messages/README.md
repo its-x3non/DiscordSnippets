@@ -20,7 +20,7 @@ Based off of [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) by Ridd
 ### [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) Credits
 - [Saltssaumure](https://github.com/Saltssaumure) - For helping me set up the theme properly, the modified settings pane, and the CSS-rules to make everything squared.
 - [Blade04208](https://github.com/Blade04208) - for the watermarking tools used to display version numbers in the settings panel.
-- [DaBluLite](https://github.com/DaBluLite) - For the improved user account details in the settings pane, and for helping set up [Colorways][colorways] compatibility.
+- [DaBluLite](https://github.com/DaBluLite) - For the improved user account details in the settings pane, and for helping set up [Colorways](https://github.com/DaBluLite/DiscordColorways) compatibility.
 - aoithesceneryhoarder from the Vencord server - For the message bubbles and for the improved channel category dividers.
 - [f53](https://f53.dev/) from the Vencord Server - For the improved chat input area, and the extended markdown fixes.
 - [Vendicated](https://github.com/Vendicated) - for the About Me cut-off fix.
