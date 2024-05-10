@@ -23,3 +23,9 @@
 
 > [!IMPORTANT]
 > Still working on preview
+
+# Credits
+- [Riddim GLiTCH](https://github.com/Riddim-GLiTCH) 
+  - [Adding the @ Back to Usernames in Profiles](https://discord.com/channels/86004744966914048/836694789898109009/1237339626969108573) 
+  - [Improved Links](https://github.com/Riddim-GLiTCH/Discord-CSS-Snippets/blob/main/snippets/Improved%20Links.md) Snippet
+  - [Right Align Self Messages](https://github.com/Riddim-GLiTCH/Virtual-Boy/blob/main/src/addon/_selfmessages.scss)

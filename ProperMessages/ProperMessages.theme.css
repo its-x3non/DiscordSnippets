@@ -7,118 +7,119 @@
   * @source https://github.com/its-x3non/DiscordSnippets/tree/main/ProperMessages
   */
 
-@import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/RightAlign.css"); 
-@import url("https://raw.githubusercontent.com/Riddim-GLiTCH/Discord-CSS-Snippets/main/snippets/CSS/ImprovedLinks.css"); /* Improved Links by Riddim-GLiTCH/Skye */
-
-:root{
-	/* Message Bubble Colors */
-	--default-msg-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), var(--default-alpha));
-	--self-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), var(--default-alpha));
-
-	/* Time Text Colors */
-	--default-time-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), calc(var(--default-alpha) + 0.25));
-	--self-time-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), calc(var(--default-alpha) + 0.25));
-
-	/* Text Colors */
-	--default-text-color: hsl(var(--default-hue), var(--default-saturation), calc(var(--default-lightness) + 20%));
-	--self-text-color: hsl(var(--self-hue), var(--self-saturation), calc(var(--self-lightness) + 15%));
-
-	/* Accent Colors */
-	--default-accent: hsl(calc(var(--default-hue) + 205), calc(var(--default-saturation) + 100%), calc(var(--default-lightness) - 30%));
-	--self-accent: hsl(var(--self-hue), calc(var(--self-saturation) + 30%), calc(var(--self-lightness) + 25%));
-	
-	/* No clue (I forgot) */
-	--text-brand: var(--default-accent);
-	--text-link: var(--default-accent);
-	--mention-foreground: var(--default-accent);
-}
-
-/* Message bubbles */
-[class^=contents_] [class^="markup"]:not(:empty, code),
-.container__17159{
-  color: var(--default-text-color);
-  border: 2px solid var(--default-msg-color);
-  background-color: var(--default-msg-color);
-  border-radius: 10px;
-  max-width: fit-content;
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 8px !important;
-  margin: 0;
-  position:relative;
-} 
-
-/* Accents */
-.messageListItem__050f9 {
-	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--default-accent) !important; }
-}
-
-/* Your color :3 */
-.messageListItem__050f9[data-is-self="true"] {
-	.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
-	.cozyMessage__9f4fd .container__17159 {
-	  border: 2px solid var(--self-color);
-	  background-color: var(--self-color);
-	  color: var(--self-text-color);
-		--text-brand: var(--self-accent);
-		--text-link: var(--self-accent);
-		--mention-foreground: var(--self-accent);
-	} 
-	
-	/* Other colors n such */
-	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--self-accent) !important; }
-	[class^="contents"] {
-		[class^="username"] { color: var(--self-text-color) !important; }
-		[class^="timestamp_"]:has(time) { color: var(--self-time-color);}
-	} 
-}
-
-
-
-/**
- * Username (and tags) and avatar stuff
- */
-[class^="contents_"] {
-	/* Adds shadowing to avatar (not avatar deco) */
-	.avatar__08316 {
-	  border-radius: 35%;
-	  box-shadow: 0 2px 4px 1px black;
-	}	
-}
-
-/**
- * etc 
- */
-
-/* Removes the reply/thread stuff */
-.repliedMessage__636d2::before, 
-.spine_d081ec.cozy__0c529,
-.message_ccca67::after
-{ display: none; }
-
-/* Adds shadow to the reaction thingy */
-[class^="container"] .reaction__4a43f{ 
-  box-shadow: 0 2px 4px 0.5px black; 
-  border: 2px solid var(--default-msg-color);
-}
-
-/* Small fixes */
-.content__945f5 { color: rgba(255,255,255,.7); } /* Makes "call" text a bit more readable */ 
-[class^=contents_] [class^="header_"]{ margin-bottom: 3px; } /* User header adjustments */
-
-/** 
- * Lightens username next to nickname			   
- * This is if you have the "ShowMeYourName" Plugin Enabled 
- */
-[class^="vc-smyn-suffix"]{ color: var(--default-time-color); }	
-
-/**
- * Add the @ back to usernames in profiles By Riddim_Glitch 
- * Taken from BD - Modified by x3non   			
- */
-[class^="discriminator__"], [class^="userTagUsernameBase__"] {
-	&::before {
-		padding-right: 1px;
-		content: "@";
-	}
-}	
+  @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
+  @import url("https://raw.githubusercontent.com/Riddim-GLiTCH/Discord-CSS-Snippets/main/snippets/CSS/ImprovedLinks.css"); /* Improved Links by Riddim-GLiTCH/Skye */
+  
+  :root{
+	  /* Message Bubble Colors */
+	  --default-msg-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), var(--default-alpha));
+	  --self-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), var(--default-alpha));
+  
+	  /* Time Text Colors */
+	  --default-time-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), calc(var(--default-alpha) + 0.25));
+	  --self-time-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), calc(var(--default-alpha) + 0.25));
+  
+	  /* Text Colors */
+	  --default-text-color: hsl(var(--default-hue), var(--default-saturation), calc(var(--default-lightness) + 20%));
+	  --self-text-color: hsl(var(--self-hue), var(--self-saturation), calc(var(--self-lightness) + 15%));
+  
+	  /* Accent Colors */
+	  --default-accent: hsl(calc(var(--default-hue) + 205), calc(var(--default-saturation) + 100%), calc(var(--default-lightness) - 30%));
+	  --self-accent: hsl(var(--self-hue), calc(var(--self-saturation) + 30%), calc(var(--self-lightness) + 25%));
+	  
+	  /* No clue (I forgot) */
+	  --text-brand: var(--default-accent);
+	  --text-link: var(--default-accent);
+	  --mention-foreground: var(--default-accent);
+  }
+  
+  /* Message bubbles */
+  [class^=contents_] [class^="markup"]:not(:empty, code),
+  .container__17159{
+	color: var(--default-text-color);
+	border: 2px solid var(--default-msg-color);
+	background-color: var(--default-msg-color);
+	border-radius: 10px;
+	max-width: 85% !important;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 8px !important;
+	margin: 0;
+	position:relative;
+  } 
+  
+  /* Accents */
+  .messageListItem__050f9 {
+	  h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--default-accent) !important; }
+  }
+  
+  /* Your color :3 */
+  .messageListItem__050f9[data-is-self="true"] {
+	  .cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
+	  .cozyMessage__9f4fd .container__17159 {
+		border: 2px solid var(--self-color);
+		background-color: var(--self-color);
+		color: var(--self-text-color);
+		  --text-brand: var(--self-accent);
+		  --text-link: var(--self-accent);
+		  --mention-foreground: var(--self-accent);
+	  } 
+	  
+	  /* Other colors n such */
+	  h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--self-accent) !important; }
+	  [class^="contents"] {
+		  [class^="username"] { color: var(--self-text-color) !important; }
+		  [class^="timestamp_"]:has(time) { color: var(--self-time-color);}
+	  } 
+  }
+  
+  
+  
+  /**
+   * Username (and tags) and avatar stuff
+   */
+  [class^="contents_"] {
+	  /* Adds shadowing to avatar (not avatar deco) */
+	  .avatar__08316 {
+		border-radius: 35%;
+		box-shadow: 0 2px 4px 1px black;
+	  }	
+  }
+  
+  /**
+   * Fixes and other stuff like that
+   */
+  
+  /* Removes the reply/thread stuff */
+  .repliedMessage__636d2::before,
+  .replying__38514::before,
+  .spine_d081ec.cozy__0c529,
+  .message_ccca67::after
+  { display: none; }
+  
+  /* Adds shadow to the reaction thingy */
+  [class^="container"] .reaction__4a43f{ 
+	box-shadow: 0 2px 4px 0.5px black; 
+	border: 2px solid var(--default-msg-color);
+  }
+  
+  /* Small fixes */
+  .content__945f5 { color: rgba(255,255,255,.7); } /* Makes "call" text a bit more readable */ 
+  [class^=contents_] [class^="header_"]{ margin-bottom: 3px; } /* User header adjustments */
+  
+  /** 
+   * Lightens username next to nickname			   
+   * This is if you have the "ShowMeYourName" Plugin Enabled 
+   */
+  [class^="vc-smyn-suffix"]{ color: var(--default-time-color); }	
+  
+  /**
+   * Add the @ back to usernames in profiles By Riddim_Glitch 
+   * Taken from BD - Modified by x3non   			
+   */
+  [class^="discriminator__"], [class^="userTagUsernameBase__"] {
+	  &::before {
+		  padding-right: 1px;
+		  content: "@";
+	  }
+  }	
