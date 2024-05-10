@@ -160,12 +160,14 @@
  * moves message actions on message
  * by glaciercherrygatorade on discord
  */
-[class^="buttonContainer"]:has([class^="buttons__"]) {
-  transform: scale(0.75);
-  position: absolute;
-  top: 50%;
-}
-
-#app-mount [class^="messageListItem__"][data-is-self="true"] [class^="buttonContainer"]:has([class^="buttons__"]) {
-	margin-right: 70%;
-}
+ [class^="buttonContainer"]:has([class^="buttons__"]) {
+    transform: scale(0.8);
+    position: absolute;
+    top: 50%;
+  }
+  
+  #app-mount [class^="messageListItem__"][data-is-self="true"] [class^="buttonContainer"]:has([class^="buttons__"]) {
+      margin-right: 100%;
+      transform: scale(0.8) rotate(180deg) scaley(-1);
+      .button_d4bf9b{ transform: scalex(-1); }
+  }

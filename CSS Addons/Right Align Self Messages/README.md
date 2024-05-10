@@ -8,8 +8,9 @@ Have your messages align over to the right :)
 ```css
 @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
 ```
-## Example
-![image](https://github.com/its-x3non/DiscordSnippets/assets/87145730/47e01309-5ddb-41c2-8cf1-23fb7477dc71)
+## Examples
+![Aligned Reaction](images/aligned-reaction.png)  
+![Aligned Reaction 2](images/aligned-reaction-2.png)
 
 
 ## Problems
