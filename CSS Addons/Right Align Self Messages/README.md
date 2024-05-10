@@ -12,7 +12,7 @@ Have your messages align over to the right :)
 ![Right Aligned Messages](images/right-aligned.png)
 
 ## Problems
-- REALLY SMALL WINDOW and really LONG messages don't align properly (in threads)
+- REALLY SMALL WINDOW and really LONG messages don't align properly (in threads)  
 ![Issue 1](images/issue1.png)
 
 # Credits
