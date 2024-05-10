@@ -161,6 +161,7 @@
  * by glaciercherrygatorade on discord
  */
 [class^="buttonContainer"]:has([class^="buttons__"]) {
+  transform: scale(0.75);
   position: absolute;
   top: 50%;
 }
