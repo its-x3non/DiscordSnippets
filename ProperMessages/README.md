@@ -5,6 +5,8 @@
 
 # QuickCSS
 ```css
+@import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/ProperMessages/ProperMessages.theme.css");
+
 :root {
   /* Default HSL values */
   --default-hue: 0;
