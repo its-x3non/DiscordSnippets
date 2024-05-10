@@ -17,7 +17,7 @@ Have your messages align over to the right :)
 
 # Credits
 Based off of Virtual Boy by [Riddim-GLiTCH](https://github.com/Riddim-GLiTCH)
-### [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) Credits
+### [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) Credits (Taken directly from the theme)
 - [Saltssaumure](https://github.com/Saltssaumure) - For helping me set up the theme properly, the modified settings pane, and the CSS-rules to make everything squared.
 - [Blade04208](https://github.com/Blade04208) - for the watermarking tools used to display version numbers in the settings panel.
 - [DaBluLite](https://github.com/DaBluLite) - For the improved user account details in the settings pane, and for helping set up [Colorways](https://github.com/DaBluLite/DiscordColorways) compatibility.
