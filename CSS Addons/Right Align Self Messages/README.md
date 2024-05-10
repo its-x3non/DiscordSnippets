@@ -9,7 +9,8 @@ Have your messages align over to the right :)
 @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
 ```
 ## Example
-![Right Aligned Messages](images/right-aligned.png)
+![image](https://github.com/its-x3non/DiscordSnippets/assets/87145730/47e01309-5ddb-41c2-8cf1-23fb7477dc71)
+
 
 ## Problems
 - REALLY SMALL WINDOW and really LONG messages don't align properly (in threads)  
@@ -17,7 +18,7 @@ Have your messages align over to the right :)
 
 # Credits
 - [Riddim GLiTCH](https://github.com/Riddim-GLiTCH) - For the "SelfMessages" Addon & Virtual Boy
-- glaciercherrygatorade from Vencord Server - Centers message actions on message
+- glaciercherrygatorade from Vencord Server - Moving message actions on message
 ### [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) Credits (Taken directly from the theme)
 - [Saltssaumure](https://github.com/Saltssaumure)
 - [Blade04208](https://github.com/Blade04208)
