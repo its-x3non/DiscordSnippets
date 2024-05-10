@@ -16,7 +16,7 @@ Have your messages align over to the right :)
 ![Issue 1](images/issue1.png)
 
 # Credits
-- [Riddim GLiTCH](https://github.com/Riddim-GLiTCH) - For the "SelfMessages" Addon
+- [Riddim GLiTCH](https://github.com/Riddim-GLiTCH) - For the "SelfMessages" Addon & Virtual Boy
 - glaciercherrygatorade from Vencord Server - Centers message actions on message
 ### [Virtual Boy](https://github.com/Riddim-GLiTCH/Virtual-Boy) Credits (Taken directly from the theme)
 - [Saltssaumure](https://github.com/Saltssaumure)
