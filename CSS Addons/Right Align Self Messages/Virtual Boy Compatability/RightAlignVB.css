@@ -182,6 +182,6 @@
     display: none;
 }
 
-[class*="markup-"][class*="messageContent-"]:not([class*="repliedTextPreview-"][class*="clickable-"] > div) {
+[class*="markup_"][class*="messageContent_"]:not([class*="repliedTextPreview_"][class*="clickable_"] > div) {
     background: linear-gradient(to right, black, black) !important;
 }
