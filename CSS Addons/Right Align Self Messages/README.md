@@ -14,7 +14,9 @@ Have your messages align over to the right :)
 
 ## Problems
 - REALLY SMALL WINDOW and really LONG messages don't align properly (in threads)  
-![Issue 1](images/issue1.png)
+![Issue 1](images/issue1.png)  
+- Text Colliding with PNG (message bubble not included)  
+![Issue 2](images/issue2.png)
 
 ## Import for Virtual Boy (Vencord)
 ```css
