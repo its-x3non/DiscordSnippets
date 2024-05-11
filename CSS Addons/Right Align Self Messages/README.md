@@ -12,10 +12,14 @@ Have your messages align over to the right :)
 ![Aligned Reaction](images/aligned-reaction.png)  
 ![Aligned Reaction 2](images/aligned-reaction-2.png)
 
-
 ## Problems
 - REALLY SMALL WINDOW and really LONG messages don't align properly (in threads)  
 ![Issue 1](images/issue1.png)
+
+## Import for Virtual Boy (Vencord)
+```css
+@import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/Virtual%20Boy%20Compatability/RightAlignVB.css");
+```
 
 # Credits
 - [Riddim GLiTCH](https://github.com/Riddim-GLiTCH) - For the "SelfMessages" Addon & Virtual Boy
