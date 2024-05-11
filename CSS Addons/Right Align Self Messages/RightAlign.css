@@ -25,6 +25,10 @@
 	text-align: left;
 }
 
+#app-mount [class^="messageListItem__"][data-is-self="true"] .imageContent__0fe2a { 
+	margin-right: 25px; 
+}
+
 #app-mount [class^="messageListItem__"][data-is-self="true"] .contents_d3ae0d {
     display: block;
     width: fit-content;
