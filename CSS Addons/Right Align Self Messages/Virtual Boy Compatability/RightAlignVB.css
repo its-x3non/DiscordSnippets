@@ -1,7 +1,7 @@
 /** 
  * Selfmessages. Heavily based on Discord 11's Message bubbles
  * Message Bubbles
- * Modified (for Virtual Boy) by x3non to work in Vencord
+ * Modified by x3non to work with Vencord
  */
 
  #app-mount [class^="messageListItem__"][data-is-self="true"] {
@@ -129,9 +129,10 @@
 #app-mount .mentioned_fa6fd2:hover .contents_d3ae0d .messageContent_abea64,
 #app-mount .mentioned_fa6fd2.selected_e3bc5d .contents_d3ae0d .messageContent_abea64 {
     background-color: var(--background-mentioned-hover);
+}
 
 #app-mount .mentioned_fa6fd2 .contents_d3ae0d .messageContent_abea64::before {
-    background-color: var(--info-warning-foreground);
+	background-color: var(--info-warning-foreground);
     content: "";
     position: absolute;
     display: block;
@@ -145,7 +146,7 @@
 }
 
 #app-mount .repliedMessage__636d2 {
-    background-color: var(--background-message-hover);
+	background-color: var(--background-mentioned-hover);
     padding: 6px;
     width: fit-content;
     max-width: 100%;
@@ -158,6 +159,7 @@
 #app-mount .replying__38514:hover .contents_d3ae0d .messageContent_abea64,
 #app-mount .replying__38514.selected_e3bc5d .contents_d3ae0d .messageContent_abea64 {
     background-color: var(--brand-experiment-10a);
+}
 
 #app-mount .replying__38514 .contents_d3ae0d .messageContent_abea64::before {
 	background-color: var(--brand-experiment);
@@ -182,6 +184,6 @@
     display: none;
 }
 
-[class*="markup_"][class*="messageContent_"]:not([class*="repliedTextPreview_"][class*="clickable_"] > div) {
+[class*="markup-"][class*="messageContent-"]:not([class*="repliedTextPreview-"][class*="clickable-"] > div) {
     background: linear-gradient(to right, black, black) !important;
 }
