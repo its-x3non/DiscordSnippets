@@ -19,7 +19,8 @@ Have your messages align over to the right :)
 ## Import for Virtual Boy (Vencord)
 ```css
 @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/Virtual%20Boy%20Compatability/RightAlignVB.css");
-```
+```  
+![VB Vencord](images/vencord-vb.png)
 
 # Credits
 - [Riddim GLiTCH](https://github.com/Riddim-GLiTCH) - For the "SelfMessages" Addon & Virtual Boy
