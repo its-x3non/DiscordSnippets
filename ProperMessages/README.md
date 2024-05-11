@@ -24,6 +24,9 @@
 > [!IMPORTANT]
 > Still working on preview
 
+# Preview
+![Preview 1](images/preview1.png)
+
 # Credits
 - [Riddim GLiTCH](https://github.com/Riddim-GLiTCH) 
   - [Adding the @ Back to Usernames in Profiles](https://discord.com/channels/86004744966914048/836694789898109009/1237339626969108573) 
