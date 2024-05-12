@@ -159,16 +159,23 @@
 /** 
  * moves message actions on message
  * by glaciercherrygatorade on discord
- * modified by x3non
  */
-[class^="buttonContainer"]:has([class^="buttons__"]) {
-  transform: scale(0.85);
-  position: absolute;
-  top: 50%;
-}
-
-#app-mount [class^="messageListItem__"][data-is-self="true"] [class^="buttonContainer"]:has([class^="buttons__"]) {
-	margin-right: 100%;
-	transform: scale(0.85) rotate(180deg) scaley(-1);
-	.button_d4bf9b{ transform: scalex(-1); }
-}
+ [class^="buttonContainer"]:has([class^="buttons__"]) {
+    transform: scale(0.85);
+    position: absolute;
+    top: 50%;
+  }
+  
+  /* aligns self messages */
+  #app-mount [class^="messageListItem__"][data-is-self="true"] [class^="buttonContainer"]:has([class^="buttons__"]) {
+      margin-right: 100%;
+      transform: scale(0.85) rotate(180deg) scaley(-1);
+      .button_d4bf9b{ transform: scalex(-1); }
+  }
+  
+  /* aligns non-groupStart messages */
+  .messageListItem__050f9 > .message_ccca67:not(.groupStart__7b93c) {
+      [class^="buttonContainer__"] > .buttons__36852 > .buttonsInner_a9dfff {
+          margin-top: 10px;
+      }
+  }
