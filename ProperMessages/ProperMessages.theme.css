@@ -17,17 +17,6 @@
 }
 
 :root{
-	  /* Default HSL values */
-	  --default-hue: 0;
-	  --default-saturation: 0%;
-	  --default-lightness: 80%;
-	  --default-alpha: 0.2;
-	
-	  /* Self HSL values */
-	  --self-hue: 285;
-	  --self-saturation: 70%;
-	  --self-lightness: 65%;
-	
 	/* Message Bubble Colors */
 	--default-msg-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), var(--default-alpha));
 	--self-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), var(--default-alpha));
