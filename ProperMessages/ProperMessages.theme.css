@@ -7,156 +7,197 @@
   * @source https://github.com/its-x3non/DiscordSnippets/tree/main/ProperMessages
   */
 
-  @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
-  @import url("https://raw.githubusercontent.com/Riddim-GLiTCH/Discord-CSS-Snippets/main/snippets/CSS/ImprovedLinks.css"); /* Improved Links by Riddim-GLiTCH/Skye */
-  
-  :root{
-	  /* Message Bubble Colors */
-	  --default-msg-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), var(--default-alpha));
-	  --self-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), var(--default-alpha));
-  
-	  /* Time Text Colors */
-	  --default-time-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), calc(var(--default-alpha) + 0.25));
-	  --self-time-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), calc(var(--default-alpha) + 0.25));
-  
-	  /* Text Colors */
-	  --default-text-color: hsl(var(--default-hue), var(--default-saturation), calc(var(--default-lightness) + 20%));
-	  --self-text-color: hsl(var(--self-hue), var(--self-saturation), calc(var(--self-lightness) + 15%));
-  
-	  /* Accent Colors */
-	  --default-accent: hsl(calc(var(--default-hue) + 205), calc(var(--default-saturation) + 100%), calc(var(--default-lightness) - 30%));
-	  --self-accent: hsl(var(--self-hue), calc(var(--self-saturation) + 30%), calc(var(--self-lightness) + 25%));
-	  
-	  /* No clue (I forgot) */
-	  --text-brand: var(--default-accent);
-	  --text-link: var(--default-accent);
-	  --mention-foreground: var(--default-accent);
-  }
-  
-  /* Message bubbles */
-  [class^="contents_"] [class^="markup"]:not(:empty, code),
-  .container__17159{
-	color: var(--default-text-color);
-	border: 2px solid var(--default-msg-color);
-	background-color: var(--default-msg-color);
-	border-radius: 10px;
-	width: fit-content;
-	max-width: 500px !important;
-	box-sizing: border-box;
-	display: inline-block;
-	padding: 8px !important;
-	margin: 0;
-	position: relative;
-	box-shadow: 0 0 6px 1px rgba(0,0,0,1);
-	text-shadow: 0 0 5px rgba(0,0,0,1);
+@import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
+
+.theme-dark .embedFull__14919 {
+  border: 2px solid !important; 
+  box-shadow: 0 0 6px 1px rgba(0,0,0,1); /* comment out if don't want shadow */
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+:root{
+	  /* Default HSL values */
+	  --default-hue: 0;
+	  --default-saturation: 0%;
+	  --default-lightness: 80%;
+	  --default-alpha: 0.2;
 	
-	/* the call text in dms */
-	.container__2acd5 { 
-	  color: rgba(255,255,255,.75); /* Makes "call" text a bit more readable */
-	  
-	  /* makes timestamp lighter */
-	  [class^="timestamp_"] { filter: brightness(1.5);  }
-	  
-	  /* the username */
-	  .anchor_c8ddc0:hover { 
-		  filter: brightness(0.5);
-		  .username__4a6f7 { filter: brightness(1.5); }
-	  }
+	  /* Self HSL values */
+	  --self-hue: 285;
+	  --self-saturation: 70%;
+	  --self-lightness: 65%;
+	
+	/* Message Bubble Colors */
+	--default-msg-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), var(--default-alpha));
+	--self-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), var(--default-alpha));
+
+	/* Time Text Colors */
+	--default-time-color: hsla(var(--default-hue), var(--default-saturation), var(--default-lightness), calc(var(--default-alpha) + 0.25));
+	--self-time-color: hsla(var(--self-hue), var(--self-saturation), var(--self-lightness), calc(var(--default-alpha) + 0.25));
+
+	/* Text Colors */
+	--default-text-color: hsl(var(--default-hue), var(--default-saturation), calc(var(--default-lightness) + 20%));
+	--self-text-color: hsl(var(--self-hue), var(--self-saturation), calc(var(--self-lightness) + 15%));
+
+	/* Accent Colors */
+	--default-accent: hsl(calc(var(--default-hue) + 205), calc(var(--default-saturation) + 100%), calc(var(--default-lightness) - 30%));
+	--self-accent: hsl(var(--self-hue), calc(var(--self-saturation) + 30%), calc(var(--self-lightness) + 25%));
+	
+	/* No clue (I forgot) */
+	--text-brand: var(--default-accent);
+	--text-link: var(--default-accent);
+	--mention-foreground: var(--default-accent);
+}
+
+/* Message bubbles */
+[class^="contents_"] [class^="markup"]:not(:empty, code),
+.container__17159{
+  color: var(--default-text-color);
+  border: 2px solid var(--default-msg-color);
+  background-color: var(--default-msg-color);
+  border-radius: 10px;
+  width: fit-content;
+  max-width: 700px !important;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 8px !important;
+  margin: 0;
+  margin-bottom: 4px;
+  position: relative;
+  box-shadow: 0 0 6px 1px rgba(0,0,0,1); /* comment out if don't want shadow */
+  text-shadow: 0 0 5px rgba(0,0,0,1);
+  
+  /* the call text in dms */
+  .container__2acd5 { 
+	color: rgba(255,255,255,.75); /* Makes "call" text a bit more readable */
+	
+	/* makes timestamp lighter */
+	[class^="timestamp_"] { filter: brightness(1.5);  }
+	
+	/* the username */
+	.anchor_c8ddc0:hover { 
+		filter: brightness(0.5);
+		.username__4a6f7 { filter: brightness(1.5); }
 	}
-  } 
-  
-  /* button container shadow */
-  [class^="buttonContainer__"] > .buttons__36852 > .buttonsInner_a9dfff { box-shadow: 0 0 5px 1px rgba(0,0,0,1); }
-  
-  
-  /* Accents */
-  .messageListItem__050f9 {
-	  h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--default-accent) !important; }
   }
-  
-  /* Your color :3 */
-  .messageListItem__050f9[data-is-self="true"] {
-	  .cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
-	  .cozyMessage__9f4fd .container__17159 {
+} 
+
+/* embed shadow */
+/*.embed_cc6dae { 
+	box-shadow: 0 0 5px 1px rgba(0,0,0,1); 
+} */
+
+/* button container shadow */
+[class^="buttonContainer__"] > .buttons__36852 > .buttonsInner_a9dfff { box-shadow: 0 0 5px 1px rgba(0,0,0,1); } /* comment out if don't want shadow */
+
+
+/* Accents */
+.messageListItem__050f9 {
+	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--default-accent) !important; }
+}
+
+/* Your color :3 */
+.messageListItem__050f9[data-is-self="true"] {
+	padding-right: 8px !important;
+	.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
+	.cozyMessage__9f4fd .container__17159,
+	.contents_d3ae0d > .messageContent_abea64 {
+	  border: 2px solid var(--self-color);
+	  background-color: var(--self-color);
+	  color: var(--self-text-color);
+		--text-brand: var(--self-accent);
+		--text-link: var(--self-accent);
+		--mention-foreground: var(--self-accent);
+	} 
+	
+	 /* editing self message */
+	 .scrollableContainer_ff917f { 
 		border: 2px solid var(--self-color);
-		background-color: var(--self-color);
-		color: var(--self-text-color);
-		  --text-brand: var(--self-accent);
-		  --text-link: var(--self-accent);
-		  --mention-foreground: var(--self-accent);
-	  } 
-	  
-	  /* Other colors n such */
-	  h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--self-accent) !important; }
-	  [class^="contents_"] {
-		  /* username stuff */
-		  [class^="username"] { 
-			  color: var(--self-text-color) !important; 
-			  text-shadow: 0 0 4px rgba(0,0,0,1);
-		  }
-		  
-		  /* time shadow */
-		  [class^="timestamp_"]:has(time) {
-			  color: var(--self-text-color);
-			  filter: brightness(0.5);
-		  }
-	  } 
-  }
-  
-  /* User header adjustments */
-  [class^="contents_"] [class^="header_"]{ 
-	  margin-bottom: 5px;
-	  text-shadow: 0 0 4px rgba(0,0,0,1);
-  } 
-  
-  /**
-   * Username (and tags) and avatar stuff
-   */
-  [class^="contents_"] {
-	  /* Adds shadowing to avatar (not avatar deco) */
-	  .avatar__08316 {
-		border-radius: 35%;
-		box-shadow: 0 2px 4px 1px black;
-	  }	
-	  
-	  /* makes timestamp next to user lighter */
-	  [class^="timestamp"]:has(time) { 
-		  color: var(--default-text-color); 
-		  filter: brightness(0.5);
-	  }
-  }
-  
-  /**
-   * Fixes and other stuff like that
-   */
-  
-  /* Removes the reply/thread stuff */
-  .repliedMessage__636d2::before,
-  .replying__38514::before,
-  .spine_d081ec.cozy__0c529,
-  .message_ccca67::after
-  { display: none; }
-  
-  /* Adds shadow to the reaction thingy */
-  [class^="container"] .reaction__4a43f{ 
-	margin-top: 2px;
-	box-shadow: 0 0px 4px 1px black; 
-	border: 2px solid var(--default-msg-color);
-  }
-  
-  /** 
-   * Lightens username next to nickname			   
-   * This is if you have the "ShowMeYourName" Plugin Enabled 
-   */
-  [class^="vc-smyn-suffix"]{ filter: brightness(1.25); }	
-  
-  /**
-   * Add the @ back to usernames in profiles By Riddim_Glitch 
-   * Taken from BD - Modified by x3non   			
-   */
-  [class^="discriminator__"], [class^="userTagUsernameBase__"] {
-	  &::before {
-		  padding-right: 1px;
-		  content: "@";
-	  }
-  }	
+		background-color: var(--self-color); 
+		box-shadow: 0 0 6px 1px rgba(0,0,0,1);
+		}
+	
+	.slateTextArea_b19976 {
+		background-color: rgba(0,0,0,0.5);
+		border: 0px;
+		box-shadow: none;
+		margin-top: 3px;
+	}
+	
+	.timestamp_c79dd2 { margin-right: auto; }
+	
+	/* Other colors n such */
+	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--self-accent) !important; }
+	[class^="contents_"] {
+		/* username stuff */
+		[class^="username"] { 
+			color: var(--self-text-color) !important; 
+			text-shadow: 0 0 4px rgba(0,0,0,1);
+		}
+		
+		/* time shadow */
+		[class^="timestamp_"]:has(time) {
+			color: var(--self-text-color);
+			filter: brightness(0.5);
+		}
+		
+		[class^="header_"]{ padding-right: 2px; } 
+	} 
+	
+	/* fixes */
+	.filenameLinkWrapper__70f96 a { margin-right: 8px; } /* file name move */
+	.metadata__05734 { direction: ltr; } /* file size no longer [size] then num */
+}
+
+/* User header adjustments */
+[class^="contents_"] [class^="header_"]{ 
+	margin-bottom: 5px;
+	text-shadow: 0 0 4px rgba(0,0,0,1);
+	padding-left: 2px;
+} 
+
+/**
+ * Username (and tags) and avatar stuff
+ */
+[class^="contents_"] {
+	/* Adds shadowing to avatar (not avatar deco) */
+	.avatar__08316 {
+	  border-radius: 35%;
+	  box-shadow: 0 2px 4px 1px black; /* comment out if don't want shadow */
+	}	
+	
+	/* makes timestamp next to user lighter */
+	[class^="timestamp"]:has(time) { 
+		color: var(--default-text-color); 
+		filter: brightness(0.5);
+	}
+}
+
+/**
+ * Fixes and other stuff like that
+ */
+
+/* Adds shadow to the reaction thingy */
+[class^="container"] .reaction__4a43f{ 
+  margin-top: 2px;
+  box-shadow: 0 0px 4px 1px black; /* comment out if don't want shadow */
+  border: 2px solid var(--default-msg-color); 
+}
+
+/** 
+ * Lightens username next to nickname			   
+ * This is if you have the "ShowMeYourName" Plugin Enabled 
+ */
+[class^="vc-smyn-suffix"]{ filter: brightness(1.25); }	
+
+/**
+ * Add the @ back to usernames in profiles By Riddim_Glitch 
+ * Taken from BD - Modified by x3non   			
+ */
+[class^="discriminator__"], [class^="userTagUsernameBase__"] {
+	&::before {
+		padding-right: 1px;
+		content: "@";
+	}
+}	
