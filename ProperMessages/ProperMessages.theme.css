@@ -9,7 +9,7 @@
 
 @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
 
-.theme-dark .embedFull__14919 {
+.theme-dark .embedFull_b0068a {
   border: 2px solid !important; 
   box-shadow: 0 0 6px 1px rgba(0,0,0,1); /* comment out if don't want shadow */
   margin-bottom: 4px;
@@ -41,7 +41,7 @@
 
 /* Message bubbles */
 [class^="contents_"] [class^="markup"]:not(:empty, code),
-.container__17159{
+.container_c15230{
   color: var(--default-text-color);
   border: 2px solid var(--default-msg-color);
   background-color: var(--default-msg-color);
@@ -58,40 +58,40 @@
   text-shadow: 0 0 5px rgba(0,0,0,1);
   
   /* the call text in dms */
-  .container__2acd5 { 
+  .container_d76df7 { 
 	color: rgba(255,255,255,.75); /* Makes "call" text a bit more readable */
 	
 	/* makes timestamp lighter */
 	[class^="timestamp_"] { filter: brightness(1.5);  }
 	
 	/* the username */
-	.anchor_c8ddc0:hover { 
+	.anchor_af404b:hover { 
 		filter: brightness(0.5);
-		.username__4a6f7 { filter: brightness(1.5); }
+		.username_de3235 { filter: brightness(1.5); }
 	}
   }
 } 
 
 /* embed shadow */
-/*.embed_cc6dae { 
+/*.embed_b0068a { 
 	box-shadow: 0 0 5px 1px rgba(0,0,0,1); 
 } */
 
 /* button container shadow */
-[class^="buttonContainer__"] > .buttons__36852 > .buttonsInner_a9dfff { box-shadow: 0 0 5px 1px rgba(0,0,0,1); } /* comment out if don't want shadow */
+[class^="buttonContainer__"] > .buttons_d5deea > .buttonsInner_d5deea { box-shadow: 0 0 5px 1px rgba(0,0,0,1); } /* comment out if don't want shadow */
 
 
 /* Accents */
-.messageListItem__050f9 {
-	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--default-accent) !important; }
+.messageListItem_d5deea {
+	h1, h2, h3, h4, .embedTitle_b0068a { color: var(--default-accent) !important; }
 }
 
 /* Your color :3 */
-.messageListItem__050f9[data-is-self="true"] {
+.messageListItem_d5deea[data-is-self="true"] {
 	padding-right: 8px !important;
-	.cozyMessage__9f4fd [class^="contents"] > [class^="markup"]:not(:empty, code),
-	.cozyMessage__9f4fd .container__17159,
-	.contents_d3ae0d > .messageContent_abea64 {
+	.cozyMessage_d5deea [class^="contents"] > [class^="markup"]:not(:empty, code),
+	.cozyMessage_d5deea .container_c15230,
+	.contents_f9f2ca > .messageContent_f9f2ca {
 	  border: 2px solid var(--self-color);
 	  background-color: var(--self-color);
 	  color: var(--self-text-color);
@@ -101,23 +101,23 @@
 	} 
 	
 	 /* editing self message */
-	 .scrollableContainer_ff917f { 
+	 .scrollableContainer_bdf0de { 
 		border: 2px solid var(--self-color);
 		background-color: var(--self-color); 
 		box-shadow: 0 0 6px 1px rgba(0,0,0,1);
 		}
 	
-	.slateTextArea_b19976 {
+	.slateTextArea_e52116 {
 		background-color: rgba(0,0,0,0.5);
 		border: 0px;
 		box-shadow: none;
 		margin-top: 3px;
 	}
 	
-	.timestamp_c79dd2 { margin-right: auto; }
+	.timestamp_f9f2ca { margin-right: auto; }
 	
 	/* Other colors n such */
-	h1, h2, h3, h4, .embedTitle__1ac59 { color: var(--self-accent) !important; }
+	h1, h2, h3, h4, .embedTitle_b0068a { color: var(--self-accent) !important; }
 	[class^="contents_"] {
 		/* username stuff */
 		[class^="username"] { 
@@ -135,8 +135,8 @@
 	} 
 	
 	/* fixes */
-	.filenameLinkWrapper__70f96 a { margin-right: 8px; } /* file name move */
-	.metadata__05734 { direction: ltr; } /* file size no longer [size] then num */
+	.filenameLinkWrapper_f46c86 a { margin-right: 8px; } /* file name move */
+	.metadata_f46c86 { direction: ltr; } /* file size no longer [size] then num */
 }
 
 /* User header adjustments */
@@ -151,7 +151,7 @@
  */
 [class^="contents_"] {
 	/* Adds shadowing to avatar (not avatar deco) */
-	.avatar__08316 {
+	.avatar_f9f2ca {
 	  border-radius: 35%;
 	  box-shadow: 0 2px 4px 1px black; /* comment out if don't want shadow */
 	}	
@@ -168,7 +168,7 @@
  */
 
 /* Adds shadow to the reaction thingy */
-[class^="container"] .reaction__4a43f{ 
+[class^="container"] .reaction_ec6b19{ 
   margin-top: 2px;
   box-shadow: 0 0px 4px 1px black; /* comment out if don't want shadow */
   border: 2px solid var(--default-msg-color); 
