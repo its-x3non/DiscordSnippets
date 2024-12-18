@@ -4,80 +4,85 @@
  * Modified by x3non to work with Vencord
  */
 
- #app-mount [class^="messageListItem__"][data-is-self="true"] {
+#app-mount [class*="messageListItem_"][data-is-self="true"] {
     margin-left: auto;
     width: auto;
     padding-left: 48px;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .container_b558d0 {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .container_b558d0 {
     direction: rtl;
 	text-align: right;
 	padding-right: 8px;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .groupStart_d5deea:not(.markup_f8f345) {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .groupStart_d5deea:not(.markup_f8f345) {
 	text-align: right;
 	padding-right: 8px;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .groupStart_d5deea > .contents_f9f2ca > .markup_f8f345  {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .groupStart_d5deea > .contents_f9f2ca > .markup_f8f345  {
 	text-align: left;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .contents_f9f2ca {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .contents_f9f2ca {
     display: block;
     width: fit-content;
     margin-left: auto;
     margin-right: 8px;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"].message_d5deea.selected_d5deea .contents_f9f2ca {
+#app-mount [class*="messageListItem_"][data-is-self="true"].message_d5deea.selected_d5deea .contents_f9f2ca {
     width: 100%;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .timestamp_f9f2ca {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .timestamp_f9f2ca {
     left: unset;
     right: 8px;
 	margin-top: 1.75px;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .replying_d5deea .contents_f9f2ca .messageContent_f9f2ca::before,
-#app-mount [class^="messageListItem__"][data-is-self="true"] .mentioned_d5deea .contents_f9f2ca .messageContent_f9f2ca::before {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .replying_d5deea .contents_f9f2ca .messageContent_f9f2ca::before,
+#app-mount [class*="messageListItem_"][data-is-self="true"] .mentioned_d5deea .contents_f9f2ca .messageContent_f9f2ca::before {
     left: unset;
     right: 0;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .contents_f9f2ca .messageContent_f9f2ca,
-#app-mount [class^="messageListItem__"][data-is-self="true"] a:not(.embed_b0068a .embedAuthorNameLink_b0068a),
-#app-mount [class^="messageListItem__"][data-is-self="true"] .repliedMessage_f9f2ca {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .contents_f9f2ca .messageContent_f9f2ca,
+#app-mount [class*="messageListItem_"][data-is-self="true"] a:not(.embed_b0068a .embedAuthorNameLink_b0068a),
+#app-mount [class*="messageListItem_"][data-is-self="true"] .repliedMessage_f9f2ca {
     margin-left: auto;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .embedAuthor_b0068a {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .embedAuthor_b0068a {
     direction: ltr;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .avatar_f9f2ca {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .avatar_f9f2ca {
     left: unset;
     right: 4px;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .header_f9f2ca {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .avatarDecoration_f9f2ca {
+	left: unset;
+	right: 0px;
+}
+
+#app-mount [class*="messageListItem_"][data-is-self="true"] .header_f9f2ca {
     display: flex;
     flex-direction: row-reverse;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .header_f9f2ca span {
+#app-mount [class*="messageListItem_"][data-is-self="true"] .header_f9f2ca span {
     margin-left: 0.25rem;
     margin-right: unset;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] > .messageContent_f9f2ca {
+#app-mount [class*="messageListItem_"][data-is-self="true"] > .messageContent_f9f2ca {
     overflow: visible;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] pre {
+#app-mount [class*="messageListItem_"][data-is-self="true"] pre {
     max-width: 100%;
 }
 
@@ -88,7 +93,7 @@
 	max-width: 750px;
 }
 
-#app-mount .contents_f9f2ca .messageContent_f9f2ca > [class^="markup_"]{
+#app-mount .contents_f9f2ca .messageContent_f9f2ca > [class*="markup_"]{
 	max-width: 750px;
 }
 
@@ -110,8 +115,8 @@
     padding-bottom: 8px;
 }
 
-#app-mount .mentioned_d5deea.compact_f9f2ca .contents_f9f2ca .messageContent_f9f2ca::before:not([class^="messageListItem__"][data-is-self="true"]),
-#app-mount .replying_d5deea.compact_f9f2ca .contents_f9f2ca .messageContent_f9f2ca::before:not([class^="messageListItem__"][data-is-self="true"]) {
+#app-mount .mentioned_d5deea.compact_f9f2ca .contents_f9f2ca .messageContent_f9f2ca::before:not([class*="messageListItem_"][data-is-self="true"]),
+#app-mount .replying_d5deea.compact_f9f2ca .contents_f9f2ca .messageContent_f9f2ca::before:not([class*="messageListItem_"][data-is-self="true"]) {
     left: 4px;
 }
 
@@ -147,10 +152,9 @@
     z-index: 1;
 }
 
-#app-mount [class^="messageListItem__"][data-is-self="true"] .repliedMessage_f9f2ca:before,
+#app-mount [class*="messageListItem_"][data-is-self="true"] .repliedMessage_f9f2ca:before,
 #app-mount .mentioned_d5deea:before,
 .replying_d5deea:before,
-.repliedMessage_f9f2ca:before,
 .spine_c15230.cozy_c15230,
 .message_d5deea::after {
     display: none;
@@ -160,22 +164,22 @@
  * moves message actions on message
  * by glaciercherrygatorade on discord
  */
- [class^="buttonContainer"]:has([class^="buttons__"]) {
-    transform: scale(0.85);
-    position: absolute;
-    top: 50%;
-  }
-  
-  /* aligns self messages */
-  #app-mount [class^="messageListItem__"][data-is-self="true"] [class^="buttonContainer"]:has([class^="buttons__"]) {
-      margin-right: 100%;
-      transform: scale(0.85) rotate(180deg) scaley(-1);
-      .button_f7e168{ transform: scalex(-1); }
-  }
-  
-  /* aligns non-groupStart messages */
-  .messageListItem_d5deea > .message_d5deea:not(.groupStart_d5deea) {
-      [class^="buttonContainer__"] > .buttons_d5deea > .buttonsInner_d5deea {
-          margin-top: 10px;
-      }
-  }
+[class*="buttonContainer"]:has([class*="buttons__"]) {
+  transform: scale(0.85);
+  position: absolute;
+  top: 50%;
+}
+
+/* aligns self messages */
+#app-mount [class*="messageListItem_"][data-is-self="true"] [class*="buttonContainer"]:has([class*="buttons__"]) {
+	margin-right: 100%;
+	transform: scale(0.85) rotate(180deg) scaley(-1);
+	.button_f7e168{ transform: scalex(-1); }
+}
+
+/* aligns non-groupStart messages */
+.messageListItem_d5deea > .message_d5deea:not(.groupStart_d5deea) {
+	[class*="buttonContainer__"] > .buttons_d5deea > .buttonsInner_d5deea {
+		margin-top: 10px;
+	}
+}
