@@ -156,7 +156,8 @@
 #app-mount .mentioned_d5deea:before,
 .replying_d5deea:before,
 .spine_c15230.cozy_c15230,
-.message_d5deea::after {
+.message_d5deea::after,
+.repliedMessageClickableSpine_f9f2ca {
     display: none;
 }
 
