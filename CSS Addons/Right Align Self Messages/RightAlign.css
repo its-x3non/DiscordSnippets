@@ -184,3 +184,8 @@
 		margin-top: 10px;
 	}
 }
+
+/**
+* fixes video controls being mirrored 
+*/
+[class^="videoControls_"] { direction: ltr; }
