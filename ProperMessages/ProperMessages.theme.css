@@ -9,7 +9,7 @@
 
 @import url("https://raw.githubusercontent.com/its-x3non/DiscordSnippets/main/CSS%20Addons/Right%20Align%20Self%20Messages/RightAlign.css"); 
 
-.theme-dark .embedFull_b0068a {
+.theme-dark .embedFull__623de {
   border: 2px solid !important; 
   box-shadow: 0 0 6px 1px rgba(0,0,0,1); /* comment out if don't want shadow */
   margin-bottom: 4px;
@@ -40,14 +40,14 @@
 }
 
 /* Message bubbles */
-[class^="contents_"] [class^="markup"]:not(:empty, code),
-.container_c15230{
+[class*="contents_"] [class*="markup"]:not(:empty, code),
+.container__9271d, [class^=visualMediaItemContainer_], [class^=inlineMediaEmbed_]{
   color: var(--default-text-color);
   border: 2px solid var(--default-msg-color);
   background-color: var(--default-msg-color);
   border-radius: 10px;
   width: fit-content;
-  max-width: 700px !important;
+  max-width: 750px !important;
   box-sizing: border-box;
   display: inline-block;
   padding: 8px !important;
@@ -58,40 +58,36 @@
   text-shadow: 0 0 5px rgba(0,0,0,1);
   
   /* the call text in dms */
-  .container_d76df7 { 
+  .container__235ca { 
 	color: rgba(255,255,255,.75); /* Makes "call" text a bit more readable */
 	
 	/* makes timestamp lighter */
 	[class^="timestamp_"] { filter: brightness(1.5);  }
 	
 	/* the username */
-	.anchor_af404b:hover { 
+	.anchor_edefb8:hover { 
 		filter: brightness(0.5);
-		.username_de3235 { filter: brightness(1.5); }
+		.username__703b9 { filter: brightness(1.5); }
 	}
   }
 } 
 
-/* embed shadow */
-/*.embed_b0068a { 
-	box-shadow: 0 0 5px 1px rgba(0,0,0,1); 
-} */
-
 /* button container shadow */
-[class^="buttonContainer__"] > .buttons_d5deea > .buttonsInner_d5deea { box-shadow: 0 0 5px 1px rgba(0,0,0,1); } /* comment out if don't want shadow */
+[class^="buttonContainer__"] > .buttons__5126c > .buttonsInner__5126c { box-shadow: 0 0 5px 1px rgba(0,0,0,1); } /* comment out if don't want shadow */
 
 
 /* Accents */
-.messageListItem_d5deea {
-	h1, h2, h3, h4, .embedTitle_b0068a { color: var(--default-accent) !important; }
+.messageListItem__5126c {
+	h1, h2, h3, h4, .embedTitle__623de { color: var(--default-accent) !important; }
 }
 
 /* Your color :3 */
-.messageListItem_d5deea[data-is-self="true"] {
+.messageListItem__5126c[data-is-self="true"] {
 	padding-right: 8px !important;
-	.cozyMessage_d5deea [class^="contents"] > [class^="markup"]:not(:empty, code),
-	.cozyMessage_d5deea .container_c15230,
-	.contents_f9f2ca > .messageContent_f9f2ca {
+	.cozyMessage__5126c [class^="contents"] > [class^="markup"]:not(:empty, code),
+	.cozyMessage__5126c .container__9271d,
+	.contents_c19a55 > .messageContent_c19a55,
+	[class^=visualMediaItemContainer_], [class^=inlineMediaEmbed_]  {
 	  border: 2px solid var(--self-color);
 	  background-color: var(--self-color);
 	  color: var(--self-text-color);
@@ -101,23 +97,23 @@
 	} 
 	
 	 /* editing self message */
-	 .scrollableContainer_bdf0de { 
+	 .scrollableContainer__74017 { 
 		border: 2px solid var(--self-color);
 		background-color: var(--self-color); 
 		box-shadow: 0 0 6px 1px rgba(0,0,0,1);
 		}
 	
-	.slateTextArea_e52116 {
+	.slateTextArea_ec4baf {
 		background-color: rgba(0,0,0,0.5);
 		border: 0px;
 		box-shadow: none;
 		margin-top: 3px;
 	}
 	
-	.timestamp_f9f2ca { margin-right: auto; }
+	.timestamp_c19a55 { margin-right: auto; }
 	
 	/* Other colors n such */
-	h1, h2, h3, h4, .embedTitle_b0068a { color: var(--self-accent) !important; }
+	h1, h2, h3, h4, .embedTitle__623de { color: var(--self-accent) !important; }
 	[class^="contents_"] {
 		/* username stuff */
 		[class^="username"] { 
@@ -135,8 +131,8 @@
 	} 
 	
 	/* fixes */
-	.filenameLinkWrapper_f46c86 a { margin-right: 8px; } /* file name move */
-	.metadata_f46c86 { direction: ltr; } /* file size no longer [size] then num */
+	.filenameLinkWrapper__0ccae a { margin-right: 8px; } /* file name move */
+	.metadata__0ccae { direction: ltr; } /* file size no longer [size] then num */
 }
 
 /* User header adjustments */
@@ -151,10 +147,17 @@
  */
 [class^="contents_"] {
 	/* Adds shadowing to avatar (not avatar deco) */
-	.avatar_f9f2ca {
+	.avatar_c19a55 {
 	  border-radius: 35%;
 	  box-shadow: 0 2px 4px 1px black; /* comment out if don't want shadow */
 	}	
+	
+	/* embed shadow */
+	[class^="mosaicItemMediaMosaic_"] { 
+		border: 2px solid red;
+		border-radius: 10px;
+		box-shadow: 0 0 5px 1px rgba(0,0,0,1); 
+	} 
 	
 	/* makes timestamp next to user lighter */
 	[class^="timestamp"]:has(time) { 
@@ -167,11 +170,18 @@
  * Fixes and other stuff like that
  */
 
-/* Adds shadow to the reaction thingy */
-[class^="container"] .reaction_ec6b19{ 
-  margin-top: 2px;
-  box-shadow: 0 0px 4px 1px black; /* comment out if don't want shadow */
-  border: 2px solid var(--default-msg-color); 
+/* Adds shadow to the reaction & welcome thingy */
+[class^="container"] {	
+	.reaction__23977 { 
+	  margin-top: 2px;
+	  box-shadow: 0 0px 4px 1px black; /* comment out if don't want shadow */
+	  border: 2px solid var(--default-msg-color); 
+	}
+	
+	[class^="welcomeCTA_"] [class^="welcomeCTAButtonOuter_"] {
+		margin-top: 2px;
+		box-shadow: 0 0px 4px 1px black;
+	}
 }
 
 /** 
@@ -180,13 +190,3 @@
  */
 [class^="vc-smyn-suffix"]{ filter: brightness(1.25); }	
 
-/**
- * Add the @ back to usernames in profiles By Riddim_Glitch 
- * Taken from BD - Modified by x3non   			
- */
-[class^="discriminator__"], [class^="userTagUsernameBase__"] {
-	&::before {
-		padding-right: 1px;
-		content: "@";
-	}
-}	
